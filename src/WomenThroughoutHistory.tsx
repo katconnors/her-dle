@@ -5,7 +5,23 @@ import Women from "./Women";
 
 function WomenThroughoutHistory() {
   const WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
-  return <> {WomanFromArray.name} </>;
+  const WomanName = WomanFromArray.name;
+  let UnderscoreArray = [];
+  for (let letter of WomanName) {
+    if (letter !== " ") {
+      UnderscoreArray.push("_");
+    } else {
+      UnderscoreArray.push(" ");
+    }
+  }
+
+  return (
+    <>
+      "{WomanFromArray.quote}"<br></br>
+      {UnderscoreArray}
+      <br></br>
+    </>
+  );
 }
 
 export default WomenThroughoutHistory;

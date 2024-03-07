@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <header>Her-dle: a game that celebrates women throughout history.</header>
+      <br></br>
       <WomenThroughoutHistory />
       <br></br>
-      {/* <Women /> */}
       <LetterButton letter="A" />
       <LetterButton letter="B" />
       <LetterButton letter="C" />
