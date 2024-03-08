@@ -13,6 +13,7 @@ function App() {
       <br></br>
       <WomenThroughoutHistory />
       <br></br>
+      <LetterButton letter="-" />
       <LetterButton letter="A" />
       <LetterButton letter="B" />
       <LetterButton letter="C" />
