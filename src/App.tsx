@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import LetterButton from "./LetterButton";
 import WomenThroughoutHistory from "./WomenThroughoutHistory";
@@ -7,44 +7,157 @@ import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 
 function App() {
+  React.useEffect(() => {
+    const WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
+    const WomanName = WomanFromArray.name;
+
+    let UnderscoreArray = [];
+
+    for (let letter of WomanName) {
+      if (letter !== " ") {
+        UnderscoreArray.push("_");
+      } else {
+        UnderscoreArray.push(" ");
+      }
+    }
+  }, []);
+
+  let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
+
   return (
     <div className="App">
-      <header>Her-dle: a game that celebrates women throughout history.</header>
+      <header>
+        Her-dle: A Wordle inspired game that celebrates women throughout
+        history.
+      </header>
       <br></br>
-      <WomenThroughoutHistory />
+      {/* <p>{UnderscoreArray}</p> */}
+      {AnswerValue}
       <br></br>
-      <LetterButton letter="-" />
-      <LetterButton letter="A" />
-      <LetterButton letter="B" />
-      <LetterButton letter="C" />
-      <LetterButton letter="D" />
-      <LetterButton letter="E" />
-      <LetterButton letter="F" />
-      <LetterButton letter="G" />
-      <LetterButton letter="H" />
-      <LetterButton letter="I" />
-      <LetterButton letter="J" />
-      <LetterButton letter="K" />
-      <LetterButton letter="L" />
-      <LetterButton letter="M" />
-      <LetterButton letter="N" />
-      <LetterButton letter="O" />
-      <br></br>
-      <LetterButton letter="P" />
+      {/* need some sort of logic here to know which underscore to modify */}
+      <LetterButton
+        letter="-"
+        onClick={() => UpdateAnswer([...AnswerValue, "-"])}
+      />
 
-      <LetterButton letter="Q" />
-      <LetterButton letter="R" />
-      <LetterButton letter="S" />
-      <LetterButton letter="T" />
-      <LetterButton letter="U" />
-      <LetterButton letter="V" />
-      <LetterButton letter="W" />
-      <LetterButton letter="X" />
-      <LetterButton letter="Y" />
-      <LetterButton letter="Z" />
-      <BackspaceButton message="Backspace" />
+      <LetterButton
+        letter="space"
+        onClick={() => UpdateAnswer([...AnswerValue, " "])}
+      />
+      <LetterButton
+        letter="A"
+        onClick={() => UpdateAnswer([...AnswerValue, "A"])}
+      />
+      <LetterButton
+        letter="B"
+        onClick={() => UpdateAnswer([...AnswerValue, "B"])}
+      />
+      <LetterButton
+        letter="C"
+        onClick={() => UpdateAnswer([...AnswerValue, "C"])}
+      />
+      <LetterButton
+        letter="D"
+        onClick={() => UpdateAnswer([...AnswerValue, "D"])}
+      />
+      <LetterButton
+        letter="E"
+        onClick={() => UpdateAnswer([...AnswerValue, "E"])}
+      />
+      <LetterButton
+        letter="F"
+        onClick={() => UpdateAnswer([...AnswerValue, "F"])}
+      />
+      <LetterButton
+        letter="G"
+        onClick={() => UpdateAnswer([...AnswerValue, "G"])}
+      />
+      <LetterButton
+        letter="H"
+        onClick={() => UpdateAnswer([...AnswerValue, "H"])}
+      />
+
+      <LetterButton
+        letter="I"
+        onClick={() => UpdateAnswer([...AnswerValue, "I"])}
+      />
+      <LetterButton
+        letter="J"
+        onClick={() => UpdateAnswer([...AnswerValue, "J"])}
+      />
+      <LetterButton
+        letter="K"
+        onClick={() => UpdateAnswer([...AnswerValue, "K"])}
+      />
+      <LetterButton
+        letter="L"
+        onClick={() => UpdateAnswer([...AnswerValue, "L"])}
+      />
+      <LetterButton
+        letter="M"
+        onClick={() => UpdateAnswer([...AnswerValue, "M"])}
+      />
+      <LetterButton
+        letter="N"
+        onClick={() => UpdateAnswer([...AnswerValue, "N"])}
+      />
+      <LetterButton
+        letter="O"
+        onClick={() => UpdateAnswer([...AnswerValue, "O"])}
+      />
       <br></br>
-      <GuessButton message="Guess name" />
+      <LetterButton
+        letter="P"
+        onClick={() => UpdateAnswer([...AnswerValue, "P"])}
+      />
+
+      <LetterButton
+        letter="Q"
+        onClick={() => UpdateAnswer([...AnswerValue, "Q"])}
+      />
+      <LetterButton
+        letter="R"
+        onClick={() => UpdateAnswer([...AnswerValue, "R"])}
+      />
+      <LetterButton
+        letter="S"
+        onClick={() => UpdateAnswer([...AnswerValue, "S"])}
+      />
+      <LetterButton
+        letter="T"
+        onClick={() => UpdateAnswer([...AnswerValue, "T"])}
+      />
+      <LetterButton
+        letter="U"
+        onClick={() => UpdateAnswer([...AnswerValue, "U"])}
+      />
+      <LetterButton
+        letter="V"
+        onClick={() => UpdateAnswer([...AnswerValue, "V"])}
+      />
+      <LetterButton
+        letter="W"
+        onClick={() => UpdateAnswer([...AnswerValue, "W"])}
+      />
+      <LetterButton
+        letter="X"
+        onClick={() => UpdateAnswer([...AnswerValue, "X"])}
+      />
+      <LetterButton
+        letter="Y"
+        onClick={() => UpdateAnswer([...AnswerValue, "Y"])}
+      />
+      <LetterButton
+        letter="Z"
+        onClick={() => UpdateAnswer([...AnswerValue, "Z"])}
+      />
+      {/* need to update this with a pop method */}
+      <BackspaceButton
+        message="Backspace"
+        onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
+      />
+      <br></br>
+      <GuessButton message="Guess Name" />
     </div>
   );
 }
