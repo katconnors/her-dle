@@ -1,4 +1,4 @@
-interface Woman {
+export interface Woman {
   name: string;
   quote: string;
   bio: string;
@@ -7,7 +7,7 @@ interface Woman {
 // Bio source from Wikipedia
 // Quotes sourced from https://www.inspiringquotes.us/ and https://en.wikiquote.org/
 
-const Women: Woman[] = [
+export const Women: Woman[] = [
   {
     name: "Evelyn Boyd Granville",
     quote: "I always smile when I hear that women cannot excel in mathematics.",
@@ -49,5 +49,3 @@ const Women: Woman[] = [
     bio: "Kalpana Chawla was an Indian-born American astronaut and aerospace engineer who was the first woman of Indian origin to fly to space.",
   },
 ];
-
-export default Women;

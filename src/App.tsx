@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import "./App.css";
 import LetterButton from "./LetterButton";
 import WomenThroughoutHistory from "./WomenThroughoutHistory";
-import Women from "./Women";
+import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 
 function App() {
+  let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
+  let UnderscoreArray;
+
   React.useEffect(() => {
-    const WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
-    const WomanName = WomanFromArray.name;
-
-    let UnderscoreArray = [];
-
-    for (let letter of WomanName) {
-      if (letter !== " ") {
-        UnderscoreArray.push("_");
-      } else {
-        UnderscoreArray.push(" ");
-      }
-    }
+    let WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
+    UpdateWoman(WomanFromArray);
   }, []);
 
   let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
@@ -31,10 +24,10 @@ function App() {
         history.
       </header>
       <br></br>
-      {/* <p>{UnderscoreArray}</p> */}
+      <WomenThroughoutHistory woman={HistoricalWoman} />
       {AnswerValue}
       <br></br>
-      {/* need some sort of logic here to know which underscore to modify */}
+
       <LetterButton
         letter="-"
         onClick={() => UpdateAnswer([...AnswerValue, "-"])}
