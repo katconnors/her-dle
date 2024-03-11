@@ -5,10 +5,10 @@ import WomenThroughoutHistory from "./WomenThroughoutHistory";
 import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
-  let UnderscoreArray;
 
   React.useEffect(() => {
     let WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
@@ -151,6 +151,17 @@ function App() {
       />
       <br></br>
       <GuessButton message="Guess Name" />
+
+      <Card
+        style={{
+          width: "18rem",
+        }}
+      >
+        <CardBody>
+          <CardTitle tag="h5">Previous Guesses</CardTitle>
+          <CardText>{/* insert guess component here */}</CardText>
+        </CardBody>
+      </Card>
     </div>
   );
 }
