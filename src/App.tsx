@@ -33,6 +33,51 @@ function App() {
       {AnswerValue}
       <br></br>
 
+      <Card
+        style={{
+          width: "15rem",
+        }}
+      >
+        <CardBody>
+          <CardTitle tag="h5">Previous Guesses</CardTitle>
+          <Badge color="primary">
+            Number of Guesses: {PreviousGuesses.length}{" "}
+          </Badge>
+
+          <CardText>
+            {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
+            {PreviousGuesses.map((guess) => {
+              if (HistoricalWoman != null) {
+                const WomanName = HistoricalWoman.name;
+                return (
+                  <div>
+                    {guess.split("").map((letter) => {
+                      if (WomanName.includes(letter)) {
+                        return (
+                          <div
+                            style={{ display: "inline-block", color: "green" }}
+                          >
+                            {letter}
+                          </div>
+                        );
+                      } else {
+                        return (
+                          <div
+                            style={{ display: "inline-block", color: "black" }}
+                          >
+                            {letter}
+                          </div>
+                        );
+                      }
+                    })}
+                  </div>
+                );
+              }
+            })}
+          </CardText>
+        </CardBody>
+      </Card>
+
       <LetterButton
         letter="-"
         onClick={() => UpdateAnswer([...AnswerValue, "-"])}
@@ -162,51 +207,6 @@ function App() {
           UpdateAnswer([]);
         }}
       />
-
-      <Card
-        style={{
-          width: "15rem",
-        }}
-      >
-        <CardBody>
-          <CardTitle tag="h5">Previous Guesses</CardTitle>
-          <Badge color="primary">
-            Number of Guesses: {PreviousGuesses.length}{" "}
-          </Badge>
-
-          <CardText>
-            {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
-            {PreviousGuesses.map((guess) => {
-              if (HistoricalWoman != null) {
-                const WomanName = HistoricalWoman.name;
-                return (
-                  <div>
-                    {guess.split("").map((letter) => {
-                      if (WomanName.includes(letter)) {
-                        return (
-                          <div
-                            style={{ display: "inline-block", color: "green" }}
-                          >
-                            {letter}
-                          </div>
-                        );
-                      } else {
-                        return (
-                          <div
-                            style={{ display: "inline-block", color: "black" }}
-                          >
-                            {letter}
-                          </div>
-                        );
-                      }
-                    })}
-                  </div>
-                );
-              }
-            })}
-          </CardText>
-        </CardBody>
-      </Card>
     </div>
   );
 }
