@@ -16,6 +16,7 @@ function App() {
   }, []);
 
   let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
+  let [PreviousGuesses, AddGuess] = useState<string[]>([]);
 
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
       </header>
       <br></br>
       <WomenThroughoutHistory woman={HistoricalWoman} />
+
       {AnswerValue}
       <br></br>
 
@@ -150,16 +152,26 @@ function App() {
         onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
       />
       <br></br>
-      <GuessButton message="Guess Name" />
+      <GuessButton
+        message="Guess Name"
+        onClick={() => {
+          AddGuess([...PreviousGuesses, AnswerValue.join("")]);
+          UpdateAnswer([]);
+        }}
+      />
 
       <Card
         style={{
-          width: "18rem",
+          width: "15rem",
         }}
       >
         <CardBody>
           <CardTitle tag="h5">Previous Guesses</CardTitle>
-          <CardText>{/* insert guess component here */}</CardText>
+          <CardText>
+            {PreviousGuesses.map((guess) => {
+              return <p>{guess} </p>;
+            })}
+          </CardText>
         </CardBody>
       </Card>
     </div>
