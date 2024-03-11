@@ -5,7 +5,7 @@ import WomenThroughoutHistory from "./WomenThroughoutHistory";
 import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -167,9 +167,38 @@ function App() {
       >
         <CardBody>
           <CardTitle tag="h5">Previous Guesses</CardTitle>
+          <Badge color="primary">
+            Number of Guesses: {PreviousGuesses.length}{" "}
+          </Badge>
+
           <CardText>
             {PreviousGuesses.map((guess) => {
-              return <p>{guess} </p>;
+              if (HistoricalWoman != null) {
+                const WomanName = HistoricalWoman.name;
+                return (
+                  <div>
+                    {guess.split("").map((letter) => {
+                      if (WomanName.includes(letter)) {
+                        return (
+                          <div
+                            style={{ display: "inline-block", color: "green" }}
+                          >
+                            {letter}
+                          </div>
+                        );
+                      } else {
+                        return (
+                          <div
+                            style={{ display: "inline-block", color: "black" }}
+                          >
+                            {letter}
+                          </div>
+                        );
+                      }
+                    })}
+                  </div>
+                );
+              }
             })}
           </CardText>
         </CardBody>
