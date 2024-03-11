@@ -32,7 +32,7 @@ export const Women: Woman[] = [
     name: "Maya Angelou",
     quote:
       "We delight in the beauty of butterfly, rarely admit the changes it has gone through to achieve that beauty.",
-    bio: "Maya Angelou, born Marguerite Annie Johnson, was an American memoirist, poet, and civil rights activist. She published seven autobiographies, three books of essays, several books of poetry, and is credited with a list of plays, movies, and television shows spanning over 50 years.",
+    bio: "Maya Angelou, born Marguerite Annie Johnson, was an American memoirist, poet, and civil rights activist.",
   },
 
   {
