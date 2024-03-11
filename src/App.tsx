@@ -25,7 +25,10 @@ function App() {
         history.
       </header>
       <br></br>
-      <WomenThroughoutHistory woman={HistoricalWoman} />
+      <WomenThroughoutHistory
+        woman={HistoricalWoman}
+        prevguess={PreviousGuesses}
+      />
 
       {AnswerValue}
       <br></br>
@@ -172,6 +175,7 @@ function App() {
           </Badge>
 
           <CardText>
+            {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
             {PreviousGuesses.map((guess) => {
               if (HistoricalWoman != null) {
                 const WomanName = HistoricalWoman.name;

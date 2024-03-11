@@ -5,6 +5,7 @@ import { Woman } from "./Women";
 
 interface WomenThroughoutHistoryProps {
   woman: Woman | null;
+  prevguess: string[];
 }
 
 function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
@@ -19,11 +20,19 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
       }
     }
 
+    let name = "";
+    let bio = "";
+    if (props.prevguess.length === 5) {
+      name = props.woman.name;
+      bio = props.woman.bio;
+    }
+
     return (
       <>
-        "{props.woman.quote}"<br></br>
-        {UnderscoreArray}
-        <br></br>
+        "{props.woman.quote}"<br />
+        {name || UnderscoreArray} <br />
+        {bio}
+        <br />
       </>
     );
   } else {
