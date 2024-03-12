@@ -26,7 +26,8 @@ function App() {
         history.
       </header>
       <br></br>
-      Make up to 5 guesses regarding the woman who said the following phrase:
+      Make up to 5 guesses for the name of the woman who said the following
+      phrase:
       <br />
       <WomenThroughoutHistory
         woman={HistoricalWoman}

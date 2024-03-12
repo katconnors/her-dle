@@ -31,7 +31,7 @@ export const Women: Woman[] = [
   {
     name: "Maya Angelou",
     quote:
-      "We delight in the beauty of butterfly, rarely admit the changes it has gone through to achieve that beauty.",
+      "We delight in the beauty of the butterfly, rarely admit the changes it has gone through to achieve that beauty.",
     bio: "Maya Angelou, born Marguerite Annie Johnson, was an American memoirist, poet, and civil rights activist.",
   },
 
