@@ -5,7 +5,7 @@ import WomenThroughoutHistory from "./WomenThroughoutHistory";
 import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
-import { Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
+import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -17,22 +17,28 @@ function App() {
 
   let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
   let [PreviousGuesses, AddGuess] = useState<string[]>([]);
+  let [showAlert, UpdateLengthAlert] = useState<boolean>(false);
 
   return (
     <div className="App">
-      <header>
+      <header style={{ fontSize: "2rem" }}>
         Her-dle: A Wordle inspired game that celebrates women throughout
         history.
       </header>
       <br></br>
+      Make up to 5 guesses regarding the woman who said the following phrase:
+      <br />
       <WomenThroughoutHistory
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
       />
-
       {AnswerValue}
+      {showAlert ? (
+        <Alert color="primary">
+          Length of guess does not match underscore hint above.
+        </Alert>
+      ) : null}
       <br></br>
-
       <Card
         style={{
           width: "15rem",
@@ -41,9 +47,9 @@ function App() {
         <CardBody>
           <CardTitle tag="h5">Previous Guesses</CardTitle>
           <Badge color="primary">
-            Number of Guesses: {PreviousGuesses.length}{" "}
-          </Badge>
-
+            Made Guesses Counter: {PreviousGuesses.length}{" "}
+          </Badge>{" "}
+          <br />
           <CardText>
             {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
             {PreviousGuesses.map((guess) => {
@@ -77,7 +83,6 @@ function App() {
           </CardText>
         </CardBody>
       </Card>
-
       {PreviousGuesses.length >= 5 ? null : (
         <div>
           <LetterButton
@@ -199,13 +204,21 @@ function App() {
             onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
           />
           <br></br>
+
           <GuessButton
             message="Guess Name"
             onClick={() => {
-              AddGuess([...PreviousGuesses, AnswerValue.join("")]);
-              UpdateAnswer([]);
+              UpdateLengthAlert(false);
+              if (HistoricalWoman != null) {
+                if (AnswerValue.length == HistoricalWoman.name.length) {
+                  AddGuess([...PreviousGuesses, AnswerValue.join("")]);
+                  UpdateAnswer([]);
+                } else {
+                  UpdateLengthAlert(true);
+                }
+              }
             }}
-          />{" "}
+          />
         </div>
       )}
     </div>
