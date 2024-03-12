@@ -48,7 +48,7 @@ function App() {
             {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
             {PreviousGuesses.map((guess) => {
               if (HistoricalWoman != null) {
-                const WomanName = HistoricalWoman.name;
+                const WomanName = HistoricalWoman.name.toUpperCase();
                 return (
                   <div>
                     {guess.split("").map((letter) => {
