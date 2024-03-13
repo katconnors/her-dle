@@ -2,9 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

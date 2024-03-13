@@ -6,6 +6,7 @@ import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
+import herdle from "./herdle.jpg";
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -21,7 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      <header style={{ fontSize: "2rem" }}>
+      <img src={herdle} className="logo" alt="logo" />
+      <header style={{ fontSize: "1.5rem" }}>
         Her-dle: A Wordle inspired game that celebrates women throughout
         history.
       </header>
