@@ -22,6 +22,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
 
     let lastname = "";
     let bio = "";
+    let underscorelength = `${UnderscoreArray.length} letters`;
 
     if (
       props.prevguess.length === 5 ||
@@ -30,15 +31,16 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     ) {
       lastname = props.woman.lastname;
       bio = props.woman.bio;
+      underscorelength = "";
     }
 
     return (
       <div className="womanprops">
         "{props.woman.quote}"<br />
         {lastname || UnderscoreArray} <br />
-        {UnderscoreArray.length} letters
+        {underscorelength}
         <br />
-        {bio}
+        <div className="biography">{bio}</div>
         <br />
       </div>
     );

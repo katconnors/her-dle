@@ -7,7 +7,7 @@ interface GuessButtonProps {
 
 function GuessButton(props: GuessButtonProps) {
   return (
-    <button type="button" onClick={props.onClick}>
+    <button className="guessbutton" type="button" onClick={props.onClick}>
       {props.message}{" "}
     </button>
   );
