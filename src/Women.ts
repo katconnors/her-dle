@@ -91,4 +91,17 @@ export const Women: Woman[] = [
     quote: "Anybody can be a role model, anybody can.",
     bio: "Selena Quintanilla-Pérez, known mononymously as Selena, was an American singer...her contributions to music and fashion made her one of the most celebrated Mexican-American entertainers of the late 20th century.",
   },
+
+  {
+    lastname: "Maathai",
+    quote:
+      "The generation that destroys the environment is not the generation that pays the price. That is the problem.",
+    bio: "Wangarĩ Muta Maathai was a Kenyan social, environmental, and political activist who founded the Green Belt Movement, an environmental non-governmental organization focused on the planting of trees, environmental conservation, and women's rights.",
+  },
+  {
+    lastname: "Ride",
+    quote:
+      "“If we want scientists and engineers in the future, we should be cultivating the girls as much as the boys.",
+    bio: "Sally Kristen Ride was an American astronaut and physicist. Born in Los Angeles, she joined NASA in 1978, and in 1983 became the first American woman and the third woman to fly in space.",
+  },
 ];
