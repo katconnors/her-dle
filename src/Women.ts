@@ -1,5 +1,5 @@
 export interface Woman {
-  name: string;
+  lastname: string;
   quote: string;
   bio: string;
 }
@@ -9,41 +9,41 @@ export interface Woman {
 
 export const Women: Woman[] = [
   {
-    name: "Evelyn Boyd Granville",
+    lastname: "Granville",
     quote: "I always smile when I hear that women cannot excel in mathematics.",
     bio: "Evelyn Boyd Granville was the second African-American woman to receive a Ph.D. in mathematics from an American university.",
   },
 
   {
-    name: "Ruth Bader Ginsburgh",
+    lastname: "Ginsburgh",
     quote:
       "My mother told me to be a lady. And for her, that meant be your own person, be independent.",
     bio: "Joan Ruth Bader Ginsburg was an American lawyer and jurist who served as an associate justice of the Supreme Court of the United States.",
   },
 
   {
-    name: "Chien-Shiung Wu",
+    lastname: "Wu",
     quote:
       "There is a misconception in America that women scientists are all dowdy spinsters.",
     bio: "Chien-Shiung Wu was a Chinese-American particle and experimental physicist who made significant contributions in the fields of nuclear and particle physics.",
   },
 
   {
-    name: "Maya Angelou",
+    lastname: "Angelou",
     quote:
       "We delight in the beauty of the butterfly, rarely admit the changes it has gone through to achieve that beauty.",
     bio: "Maya Angelou, born Marguerite Annie Johnson, was an American memoirist, poet, and civil rights activist.",
   },
 
   {
-    name: "Amelia Earhart",
+    lastname: "Earhart",
     quote:
       "Women must try to do things as men have tried. When they fail, their failure must be but a challenge to others.",
     bio: "Amelia Mary Earhart was an American aviation pioneer and writer. Earhart was the first female aviator to fly solo across the Atlantic Ocean.",
   },
 
   {
-    name: "Kalpana Chawla",
+    lastname: "Chawla",
     quote:
       "The path from dreams to success does exist. May you have the vision to find it, the courage to get on it and the perseverance to follow it.",
     bio: "Kalpana Chawla was an Indian-born American astronaut and aerospace engineer who was the first woman of Indian origin to fly to space.",

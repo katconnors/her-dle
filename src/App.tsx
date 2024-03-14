@@ -28,7 +28,7 @@ function App() {
         history.
       </header>
       <br></br>
-      Make up to 5 guesses for the name of the woman who said the following
+      Make up to 5 guesses for the last name of the woman who said the following
       phrase:
       <br />
       <WomenThroughoutHistory
@@ -57,7 +57,7 @@ function App() {
             {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
             {PreviousGuesses.map((guess) => {
               if (HistoricalWoman != null) {
-                const WomanName = HistoricalWoman.name.toUpperCase();
+                const WomanName = HistoricalWoman.lastname.toUpperCase();
                 return (
                   <div>
                     {guess.split("").map((letter) => {
@@ -92,10 +92,7 @@ function App() {
             letter="-"
             onClick={() => UpdateAnswer([...AnswerValue, "-"])}
           />
-          <LetterButton
-            letter="space"
-            onClick={() => UpdateAnswer([...AnswerValue, " "])}
-          />
+
           <LetterButton
             letter="A"
             onClick={() => UpdateAnswer([...AnswerValue, "A"])}
@@ -213,7 +210,7 @@ function App() {
             onClick={() => {
               UpdateLengthAlert(false);
               if (HistoricalWoman != null) {
-                if (AnswerValue.length == HistoricalWoman.name.length) {
+                if (AnswerValue.length == HistoricalWoman.lastname.length) {
                   AddGuess([...PreviousGuesses, AnswerValue.join("")]);
                   UpdateAnswer([]);
                 } else {

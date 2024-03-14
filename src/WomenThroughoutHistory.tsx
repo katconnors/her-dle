@@ -10,7 +10,7 @@ interface WomenThroughoutHistoryProps {
 
 function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
   if (props.woman !== null) {
-    const WomanName = props.woman.name;
+    const WomanName = props.woman.lastname;
     let UnderscoreArray = [];
     for (let letter of WomanName) {
       if (letter !== " ") {
@@ -20,11 +20,15 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
       }
     }
 
-    let name = "";
+    let lastname = "";
     let bio = "";
 
-    if (props.prevguess.length === 5) {
-      name = props.woman.name;
+    if (
+      props.prevguess.length === 5 ||
+      props.woman.lastname.toUpperCase() ===
+        props.prevguess[props.prevguess.length - 1]
+    ) {
+      lastname = props.woman.lastname;
       bio = props.woman.bio;
     }
     // else (props.prevguess.includes(props.woman.name.split(" ").join("").toUpperCase)) {
@@ -35,7 +39,8 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     return (
       <>
         "{props.woman.quote}"<br />
-        {name || UnderscoreArray} <br />
+        {lastname || UnderscoreArray} <br />
+        {UnderscoreArray.length} letters
         <br />
         {bio}
         <br />
