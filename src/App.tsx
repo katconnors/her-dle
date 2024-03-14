@@ -5,7 +5,15 @@ import WomenThroughoutHistory from "./WomenThroughoutHistory";
 import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
-import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
+import {
+  Alert,
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Badge,
+} from "reactstrap";
 import herdle from "./herdle.jpg";
 
 function App() {
@@ -27,10 +35,12 @@ function App() {
         Her-dle: A Wordle inspired game that celebrates women throughout
         history.
       </header>
-      <br></br>
-      Make up to 5 guesses for the last name of the woman who said the following
-      phrase:
       <br />
+      {HistoricalWoman != null &&
+      HistoricalWoman.lastname.toUpperCase() ===
+        PreviousGuesses[PreviousGuesses.length - 1] ? (
+        <div> Success! </div>
+      ) : null}
       <WomenThroughoutHistory
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
@@ -48,7 +58,20 @@ function App() {
         }}
       >
         <CardBody>
-          <CardTitle tag="h5">Previous Guesses</CardTitle>
+          <CardTitle tag="h4">How To Play</CardTitle>
+          <CardText>
+            -You have five guesses until the woman is revealed <br /> <br />{" "}
+            -Letters that are green/underlined appear in the name
+          </CardText>
+        </CardBody>
+      </Card>
+      <Card
+        style={{
+          width: "15rem",
+        }}
+      >
+        <CardBody>
+          <CardTitle tag="h4">Previous Guesses</CardTitle>
           <Badge color="primary">
             Made Guesses Counter: {PreviousGuesses.length}{" "}
           </Badge>{" "}
@@ -64,7 +87,11 @@ function App() {
                       if (WomanName.includes(letter)) {
                         return (
                           <div
-                            style={{ display: "inline-block", color: "green" }}
+                            style={{
+                              display: "inline-block",
+                              color: "green",
+                              textDecorationLine: "underline",
+                            }}
                           >
                             {letter}
                           </div>

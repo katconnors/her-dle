@@ -31,10 +31,6 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
       lastname = props.woman.lastname;
       bio = props.woman.bio;
     }
-    // else (props.prevguess.includes(props.woman.name.split(" ").join("").toUpperCase)) {
-    //   name = props.woman.name;
-    //   bio = props.woman.bio;
-    // }
 
     return (
       <>
