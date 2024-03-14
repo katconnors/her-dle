@@ -5,17 +5,12 @@ import WomenThroughoutHistory from "./WomenThroughoutHistory";
 import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
-import {
-  Alert,
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Badge,
-} from "reactstrap";
+import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
 import herdle from "./herdle.jpg";
 import RefreshButton from "./RefreshButton";
+import Confetti from "react-confetti";
+
+// github source for confetti: https://www.npmjs.com/package/react-confetti?activeTab=readme
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -49,6 +44,7 @@ function App() {
         <div className="successtext">
           {" "}
           You figured out the name! Press button above to play again. <br />
+          <Confetti numberOfPieces={400} recycle={false}></Confetti>
           <br />
         </div>
       ) : null}
@@ -61,7 +57,6 @@ function App() {
           Length of guess does not match underscore hint above.
         </Alert>
       ) : null}
-      <br></br>
       <Card
         style={{
           width: "180pt",
@@ -70,7 +65,7 @@ function App() {
         <CardBody>
           <CardTitle tag="h4">How To Play</CardTitle>
           <CardText>
-            -You have 5 guesses until the woman's name is revealed <br />{" "}
+            -You have 5 guesses until the woman's last name is revealed <br />{" "}
             -Letters that are green/underlined in Previous Guesses appear in the
             name
           </CardText>
@@ -84,7 +79,7 @@ function App() {
         <CardBody>
           <CardTitle tag="h4">Previous Guesses</CardTitle>
           <Badge color="primary">
-            Made Guesses Counter: {PreviousGuesses.length}{" "}
+            Guesses left: {5 - PreviousGuesses.length}{" "}
           </Badge>{" "}
           <br />
           <CardText>
