@@ -7,7 +7,7 @@ interface LetterButtonProps {
 
 function LetterButton(props: LetterButtonProps) {
   return (
-    <button type="button" onClick={props.onClick}>
+    <button className="letterbutton" type="button" onClick={props.onClick}>
       {props.letter}
     </button>
   );

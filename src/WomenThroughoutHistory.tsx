@@ -33,14 +33,14 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     }
 
     return (
-      <>
+      <div className="womanprops">
         "{props.woman.quote}"<br />
         {lastname || UnderscoreArray} <br />
         {UnderscoreArray.length} letters
         <br />
         {bio}
         <br />
-      </>
+      </div>
     );
   } else {
     return null;

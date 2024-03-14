@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <img src={herdle} className="logo" alt="logo" />
-      <header style={{ fontSize: "1.5rem" }}>
+      <header className="headertitle">
         Her-dle: A Wordle inspired game that celebrates women throughout
         history.
       </header>
@@ -39,13 +39,13 @@ function App() {
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
-        <div> Success! </div>
+        <div className="successtext"> Success! </div>
       ) : null}
       <WomenThroughoutHistory
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
       />
-      {AnswerValue}
+      <div className="answervalue"> {AnswerValue}</div>
       {showAlert ? (
         <Alert color="primary">
           Length of guess does not match underscore hint above.
@@ -179,6 +179,7 @@ function App() {
             letter="M"
             onClick={() => UpdateAnswer([...AnswerValue, "M"])}
           />
+          <br></br>
           <LetterButton
             letter="N"
             onClick={() => UpdateAnswer([...AnswerValue, "N"])}
@@ -187,7 +188,7 @@ function App() {
             letter="O"
             onClick={() => UpdateAnswer([...AnswerValue, "O"])}
           />
-          <br></br>
+
           <LetterButton
             letter="P"
             onClick={() => UpdateAnswer([...AnswerValue, "P"])}
@@ -232,7 +233,7 @@ function App() {
             letter="Z"
             onClick={() => UpdateAnswer([...AnswerValue, "Z"])}
           />
-          {/* need to update this with a pop method */}
+
           <BackspaceButton
             message="Backspace"
             onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
