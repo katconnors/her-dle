@@ -15,6 +15,7 @@ import {
   Badge,
 } from "reactstrap";
 import herdle from "./herdle.jpg";
+import RefreshButton from "./RefreshButton";
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -36,6 +37,11 @@ function App() {
         history.
       </header>
       <br />
+
+      <RefreshButton
+        message="New game/reload page"
+        onClick={() => window.location.reload()}
+      ></RefreshButton>
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
