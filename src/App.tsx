@@ -37,11 +37,12 @@ function App() {
         history.
       </header>
       <br />
-
       <RefreshButton
         message="New game/reload page"
         onClick={() => window.location.reload()}
-      ></RefreshButton>
+      ></RefreshButton>{" "}
+      <br />
+      <br />
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
@@ -60,20 +61,20 @@ function App() {
       <br></br>
       <Card
         style={{
-          width: "15rem",
+          width: "180pt",
         }}
       >
         <CardBody>
           <CardTitle tag="h4">How To Play</CardTitle>
           <CardText>
-            -You have five guesses until the woman is revealed <br /> <br />{" "}
-            -Letters that are green/underlined appear in the name
+            -You have five guesses until the woman is revealed <br /> -Letters
+            that are green/underlined appear in the name
           </CardText>
         </CardBody>
       </Card>
       <Card
         style={{
-          width: "15rem",
+          width: "180pt",
         }}
       >
         <CardBody>
@@ -185,7 +186,7 @@ function App() {
             letter="M"
             onClick={() => UpdateAnswer([...AnswerValue, "M"])}
           />
-          <br></br>
+
           <LetterButton
             letter="N"
             onClick={() => UpdateAnswer([...AnswerValue, "N"])}

@@ -4,7 +4,7 @@ export interface Woman {
   bio: string;
 }
 
-// Bio source from Wikipedia
+// Bio sourced and modified from Wikipedia
 // Quotes sourced from https://www.inspiringquotes.us/ and https://en.wikiquote.org/
 
 export const Women: Woman[] = [
@@ -25,14 +25,14 @@ export const Women: Woman[] = [
     lastname: "Wu",
     quote:
       "There is a misconception in America that women scientists are all dowdy spinsters.",
-    bio: "Chien-Shiung Wu was a Chinese-American particle and experimental physicist who made significant contributions in the fields of nuclear and particle physics.",
+    bio: "Chien-Shiung Wu was a Chinese-American particle and experimental physicist. Wu worked on the Manhattan Project, where she helped develop the process for separating uranium.",
   },
 
   {
     lastname: "Angelou",
     quote:
       "Prepare yourself so that you can be a rainbow in somebody else's cloud.",
-    bio: "Maya Angelou was an American memoirist, poet, and civil rights activist.",
+    bio: "Maya Angelou was an American memoirist, poet, and civil rights activist. She received dozens of awards and more than 50 honorary degrees.",
   },
 
   {
@@ -52,14 +52,14 @@ export const Women: Woman[] = [
   {
     lastname: "Hopper",
     quote: "I've always been more interested in the future than in the past.",
-    bio: "Grace Brewster Hopper was an American computer scientist, mathematician, and United States Navy rear admiral.",
+    bio: "Grace Brewster Hopper was an American computer scientist, mathematician, and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming",
   },
 
   {
     lastname: "Lovelace",
     quote:
       "That brain of mine is something more than merely mortal; as time will show.",
-    bio: "Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.",
+    bio: "Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on the Analytical Engine.",
   },
 
   {
@@ -101,7 +101,7 @@ export const Women: Woman[] = [
   {
     lastname: "Ride",
     quote:
-      "“If we want scientists and engineers in the future, we should be cultivating the girls as much as the boys.",
-    bio: "Sally Kristen Ride was an American astronaut and physicist. Born in Los Angeles, she joined NASA in 1978, and in 1983 became the first American woman and the third woman to fly in space.",
+      "If we want scientists and engineers in the future, we should be cultivating the girls as much as the boys.",
+    bio: "Sally Kristen Ride was an American astronaut and physicist. In 1983 became the first American woman and the third woman to fly in space.",
   },
 ];
