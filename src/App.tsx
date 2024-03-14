@@ -86,11 +86,18 @@ function App() {
           </CardText>
         </CardBody>
       </Card>
-      {PreviousGuesses.length >= 5 ? null : (
+      {PreviousGuesses.length >= 5 ||
+      HistoricalWoman == null ||
+      HistoricalWoman.lastname.toUpperCase() ===
+        PreviousGuesses[PreviousGuesses.length - 1] ? null : (
         <div>
           <LetterButton
             letter="-"
             onClick={() => UpdateAnswer([...AnswerValue, "-"])}
+          />
+          <LetterButton
+            letter="'"
+            onClick={() => UpdateAnswer([...AnswerValue, "'"])}
           />
 
           <LetterButton
