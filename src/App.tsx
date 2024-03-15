@@ -131,15 +131,6 @@ function App() {
         PreviousGuesses[PreviousGuesses.length - 1] ? null : (
         <div>
           <LetterButton
-            letter="-"
-            onClick={() => UpdateAnswer([...AnswerValue, "-"])}
-          />
-          <LetterButton
-            letter="'"
-            onClick={() => UpdateAnswer([...AnswerValue, "'"])}
-          />
-
-          <LetterButton
             letter="Q"
             onClick={() => UpdateAnswer([...AnswerValue, "Q"])}
           />
@@ -181,6 +172,10 @@ function App() {
             letter="P"
             onClick={() => UpdateAnswer([...AnswerValue, "P"])}
           />
+          <BackspaceButton
+            message="Backspace"
+            onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
+          />
           <br />
           <LetterButton
             letter="A"
@@ -221,6 +216,10 @@ function App() {
             letter="L"
             onClick={() => UpdateAnswer([...AnswerValue, "L"])}
           />
+          <LetterButton
+            letter="'"
+            onClick={() => UpdateAnswer([...AnswerValue, "'"])}
+          />
           <br />
           <LetterButton
             letter="Z"
@@ -251,11 +250,11 @@ function App() {
             letter="M"
             onClick={() => UpdateAnswer([...AnswerValue, "M"])}
           />
-
-          <BackspaceButton
-            message="Backspace"
-            onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
+          <LetterButton
+            letter="-"
+            onClick={() => UpdateAnswer([...AnswerValue, "-"])}
           />
+
           <br></br>
 
           <GuessButton
