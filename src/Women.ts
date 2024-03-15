@@ -7,8 +7,8 @@ export interface Woman {
 
 // Bio sourced and modified from Wikipedia
 // Quotes sourced from:
+// https://en.wikiquote.org/
 //  https://www.inspiringquotes.us/
-//  https://en.wikiquote.org/
 //  https://quotationsbywomen.com/
 
 export const Women: Woman[] = [
@@ -83,7 +83,8 @@ export const Women: Woman[] = [
 
   {
     lastname: "Tubman",
-    quote: "Every great dream begins with a dreamer.",
+    quote:
+      "When I found I had crossed that line, I looked at my hands to see if I was the same person.",
     link: "https://en.wikipedia.org/wiki/Harriet_Tubman",
     bio: "Harriet Tubman was an American abolitionist and social activist. After escaping slavery, Tubman made some 13 missions to rescue approximately 70 enslaved people, including her family and friends, using the network of antislavery activists and safe houses known collectively as the Underground Railroad.",
   },
@@ -227,14 +228,13 @@ export const Women: Woman[] = [
   {
     lastname: "Roosevelt",
     quote:
-      "I can't tell you how to succeed, but I can tell you how to fail: Try to please everybody.",
+      "We must know what we think and speak out, even at the risk of unpopularity.",
     link: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
     bio: "Anna Eleanor Roosevelt was an American political figure, diplomat, and activist. Through her travels, public engagement, and advocacy, she largely redefined the role of First Lady. She advocated for expanded roles for women in the workplace, the civil rights of African Americans and Asian Americans, and the rights of World War II refugees.",
   },
   {
     lastname: "Hepburn",
-    quote:
-      "We have to feel for one another if we're going to survive with dignity.",
+    quote: "I believe in being strong when everything seems to be going wrong.",
     link: "https://en.wikipedia.org/wiki/Audrey_Hepburn",
     bio: "Audrey Kathleen Hepburn was a British actress. Recognised as a film and fashion icon, she was ranked by the American Film Institute as the third-greatest female screen legend from the Classical Hollywood cinema. Later in life, Hepburn devoted much of her time to UNICEF, to which she had contributed since 1954.",
   },
