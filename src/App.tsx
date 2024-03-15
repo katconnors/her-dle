@@ -52,12 +52,6 @@ function App() {
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
       />
-      {showAlert ? (
-        <Alert color="primary">
-          Length of guess does not match the length hints above. Please modify
-          your guess.
-        </Alert>
-      ) : null}
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <Card
@@ -130,8 +124,14 @@ function App() {
             </CardBody>
           </Card>
         </div>
-        <br />
+
         <div className="answerwithkeyboard">
+          {showAlert ? (
+            <Alert color="primary">
+              Length of guess does not match the length hints above. Please
+              modify your guess.
+            </Alert>
+          ) : null}{" "}
           <div className="answervalue"> {AnswerValue}</div> <br />
           {PreviousGuesses.length >= 5 ||
           HistoricalWoman == null ||
