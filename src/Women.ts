@@ -175,7 +175,7 @@ export const Women: Woman[] = [
     lastname: "Bly",
     quote: "Energy rightly applied and directed will accomplish anything.",
     link: "https://en.wikipedia.org/wiki/Nellie_Bly",
-    bio: "Elizabeth Cochrane Seaman, better known by her pen name Nellie Bly, was an American journalist, who was widely known for her record-breaking trip around the world in 72 days in emulation of Jules Verne's fictional character Phileas Fogg, and an exposé in which she worked undercover to report on a mental institution from within.",
+    bio: "Elizabeth Cochrane Seaman, better known by her pen name Nellie Bly, was an American journalist, who was widely known for her record-breaking trip around the world in 72 days, and an exposé in which she worked undercover to report on a mental institution from within.",
   },
   {
     lastname: "Parks",
