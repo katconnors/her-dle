@@ -330,4 +330,31 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Helen_Keller",
     bio: "Helen Adams Keller was an American author, disability rights advocate, political activist and lecturer. Keller campaigned for those with disabilities, for women's suffrage, labor rights, and world peace.",
   },
+  {
+    lastname: "Wong",
+    quote: "I was so tired of the parts I had to play.",
+    link: "https://en.wikipedia.org/wiki/Anna_May_Wong",
+    bio: "Wong Liu Tsong, known professionally as Anna May Wong, was an American actress, considered the first Chinese American film star in Hollywood, as well as the first Chinese American actress to gain international recognition.",
+  },
+  {
+    lastname: "Handler",
+    quote:
+      "Through the doll, the little girl could be anything she wanted to be.",
+    link: "https://en.wikipedia.org/wiki/Ruth_Handler",
+    bio: "Ruth Marianna Handler was an American businesswoman and inventor. She is best known for inventing the Barbie doll, and being co-founder of toy manufacturer Mattel.",
+  },
+  {
+    lastname: "Mink",
+    quote:
+      "America is not a country which needs to demand conformity of its people, for its strength lies in all our diversities converging in one common belief.",
+    link: "https://en.wikipedia.org/wiki/Patsy_Mink",
+    bio: "Patsy Matsu Mink was an American attorney and politician from the U.S. state of Hawaii. She was the first woman of color and the first Asian-American woman elected to Congress, and is known for her work on legislation advancing women's rights and education.",
+  },
+  {
+    lastname: "Yalow",
+    quote:
+      "We still live in a world in which a significant fraction of people, including women, believe that a woman belongs and want to belong exclusively in the home.",
+    link: "https://en.wikipedia.org/wiki/Rosalyn_Sussman_Yalow",
+    bio: "Rosalyn Sussman Yalow was an American medical physicist, and a co-winner of the 1977 Nobel Prize in Physiology or Medicine for development of the radioimmunoassay technique.",
+  },
 ];
