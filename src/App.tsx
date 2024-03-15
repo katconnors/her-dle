@@ -65,8 +65,10 @@ function App() {
         <CardBody>
           <CardTitle tag="h4">How To Play</CardTitle>
           <CardText>
-            -You have 5 guesses until the woman's last name is revealed <br />{" "}
-            -Letters that are green/underlined in Previous Guesses appear in the
+            -Guess the last name of the woman attributed with the quote
+            <br />
+            -You have 5 guesses until the name is revealed <br /> -Letters that
+            are green/underlined in Previous Guesses box below appear in the
             name
           </CardText>
         </CardBody>

@@ -23,6 +23,8 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     let lastname = "";
     let bio = "";
     let underscorelength = `${UnderscoreArray.length} letters`;
+    let link = "";
+    let linktext = "";
 
     if (
       props.prevguess.length === 5 ||
@@ -31,7 +33,9 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     ) {
       lastname = props.woman.lastname;
       bio = props.woman.bio;
+      link = props.woman.link;
       underscorelength = "";
+      linktext = `Learn more about ${lastname} on Wikipedia`;
     }
 
     return (
@@ -42,6 +46,10 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
         <br />
         <div className="biography">{bio}</div>
         <br />
+        <a href={link} target="_blank">
+          {linktext}
+        </a>
+        <br></br>
       </div>
     );
   } else {
