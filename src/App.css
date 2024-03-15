@@ -2,6 +2,9 @@
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .headertitle {
@@ -55,6 +58,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2%;
   width: 25%;
 }
 

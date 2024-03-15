@@ -54,7 +54,8 @@ function App() {
       />
       {showAlert ? (
         <Alert color="primary">
-          Length of guess does not match underscore hint above.
+          Length of guess does not match the length hints above. Please modify
+          your guess.
         </Alert>
       ) : null}
       <Card
@@ -70,10 +71,10 @@ function App() {
             -You have 5 guesses until the woman's name is revealed <br />{" "}
             -Letters that are green/underlined (in the Previous Guesses section
             below) appear in the woman's name
-            <br /> -Note that there are no location based hints <br />
           </CardText>
         </CardBody>
       </Card>
+      <br />
       <Card
         style={{
           width: "180pt",
@@ -180,6 +181,7 @@ function App() {
             letter="P"
             onClick={() => UpdateAnswer([...AnswerValue, "P"])}
           />
+          <br />
           <LetterButton
             letter="A"
             onClick={() => UpdateAnswer([...AnswerValue, "A"])}
@@ -219,6 +221,7 @@ function App() {
             letter="L"
             onClick={() => UpdateAnswer([...AnswerValue, "L"])}
           />
+          <br />
           <LetterButton
             letter="Z"
             onClick={() => UpdateAnswer([...AnswerValue, "Z"])}
