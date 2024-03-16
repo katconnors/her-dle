@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import LetterButton from "./LetterButton";
 import WomenThroughoutHistory from "./WomenThroughoutHistory";
@@ -17,7 +17,9 @@ import {
 } from "reactstrap";
 
 // github source for confetti: https://www.npmjs.com/package/react-confetti?activeTab=readme
-// https://reactstrap.github.io/?path=/docs/components-accordion--accordion
+
+// height element resource:https://stackoverflow.com/questions/35153599/reactjs-get-height-of-an-element
+// https://stackoverflow.com/questions/61199316/why-is-ref-current-clientheight-always-possibly-null
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -30,6 +32,7 @@ function App() {
   let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
   let [PreviousGuesses, AddGuess] = useState<string[]>([]);
   let [showAlert, UpdateLengthAlert] = useState<boolean>(false);
+  const ref = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState<string>("1");
   const toggle = (id: string) => {
     if (open === id) {
@@ -40,7 +43,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div ref={ref} className="App">
       <img src={herdle} className="logo" alt="logo" />
       <header className="headertitle">
         Her-dle: A Wordle inspired game that celebrates women throughout
@@ -59,7 +62,16 @@ function App() {
         <div className="successtext">
           {" "}
           You figured out the name! Press button above to play again. <br />
-          <Confetti numberOfPieces={400} recycle={false}></Confetti>
+          <Confetti
+            height={
+              500 +
+              (ref.current && ref.current.clientHeight
+                ? ref.current.clientHeight
+                : 0)
+            }
+            numberOfPieces={400}
+            recycle={false}
+          ></Confetti>
           <br />
         </div>
       ) : null}
