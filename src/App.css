@@ -5,6 +5,8 @@
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .headertitle {
@@ -23,6 +25,18 @@
 
 .biography {
   font-weight: 600;
+}
+
+.accordion-button {
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cardtitle {
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 400;
 }
 
 .answerwithkeyboard {
@@ -54,25 +68,22 @@
 
 .letterbutton {
   min-width: 3%;
-  font-family: "Times New Roman", Times, serif;
+
   border-radius: 20%;
 }
 
 .backspacebutton {
   min-width: 3%;
-  font-family: "Times New Roman", Times, serif;
   border-radius: 10%;
 }
 
 .guessbutton {
   min-width: 3%;
-  font-family: "Times New Roman", Times, serif;
   border-radius: 10%;
 }
 
 .refreshbutton {
   min-width: 3%;
-  font-family: "Times New Roman", Times, serif;
   border-radius: 10%;
 }
 

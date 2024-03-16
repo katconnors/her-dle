@@ -9,8 +9,15 @@ import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
 import herdle from "./herdle.jpg";
 import RefreshButton from "./RefreshButton";
 import Confetti from "react-confetti";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionBody,
+  AccordionHeader,
+} from "reactstrap";
 
 // github source for confetti: https://www.npmjs.com/package/react-confetti?activeTab=readme
+// https://reactstrap.github.io/?path=/docs/components-accordion--accordion
 
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
@@ -23,6 +30,14 @@ function App() {
   let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
   let [PreviousGuesses, AddGuess] = useState<string[]>([]);
   let [showAlert, UpdateLengthAlert] = useState<boolean>(false);
+  const [open, setOpen] = useState<string>("1");
+  const toggle = (id: string) => {
+    if (open === id) {
+      setOpen("");
+    } else {
+      setOpen(id);
+    }
+  };
 
   return (
     <div className="App">
@@ -54,23 +69,24 @@ function App() {
       />
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
-          <Card
-            style={{
-              width: "180pt",
-            }}
-          >
-            <CardBody>
-              <CardTitle tag="h4">How To Play</CardTitle>
-              <CardText>
-                -Guess the last name of the woman attributed with the shown
-                quote
-                <br />
-                -You have 5 guesses until the woman's name is revealed <br />{" "}
-                -Letters that are green/underlined (in the Previous Guesses
-                section below) appear in the woman's name
-              </CardText>
-            </CardBody>
-          </Card>
+          <div>
+            <Accordion open={open} toggle={toggle}>
+              <AccordionItem>
+                <AccordionHeader className="accordiontitle" targetId="1">
+                  <div style={{ width: "100%" }}> How to Play</div>
+                </AccordionHeader>
+                <AccordionBody accordionId="1" style={{ width: "180pt" }}>
+                  -Guess the last name of the woman attributed with the shown
+                  quote
+                  <br />
+                  -You have 5 guesses until the woman's name is revealed <br />{" "}
+                  -Letters that are green/underlined (in the Previous Guesses
+                  section below) appear in the woman's name
+                </AccordionBody>
+              </AccordionItem>
+            </Accordion>
+          </div>
+
           <br />
           <Card
             style={{
@@ -78,7 +94,9 @@ function App() {
             }}
           >
             <CardBody>
-              <CardTitle tag="h4">Previous Guesses</CardTitle>
+              <CardTitle className="cardtitle" tag="h4">
+                Previous Guesses
+              </CardTitle>
               <Badge color="primary">
                 Guesses left: {5 - PreviousGuesses.length}{" "}
               </Badge>{" "}
