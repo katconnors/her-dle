@@ -1,11 +1,11 @@
 # Her-dle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Premise
-
-Her-dle is a guessing game inspired by Wordle; its intent is to share facts about famous women throughout history.
+Her-dle is a guessing game inspired by Wordle; its intent is to share facts about women throughout history.
 It was initiated during Women's History Month 2024.
+
+![alt text](herdle.jpg) <br>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
