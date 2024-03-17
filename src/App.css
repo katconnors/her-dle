@@ -20,7 +20,7 @@
 }
 
 .womanprops {
-  font-size: 18pt;
+  font-size: 15pt;
 }
 
 .biography {
@@ -60,6 +60,7 @@
 }
 
 .cardkeyboard {
+  padding-top: 20pt;
   display: flex;
   flex-direction: row;
   justify-content: center;
