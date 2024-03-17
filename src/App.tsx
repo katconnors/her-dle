@@ -82,7 +82,17 @@ function App() {
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <div>
-            <Accordion open={open} toggle={toggle}>
+            <Accordion
+              open={
+                HistoricalWoman != null &&
+                (PreviousGuesses.length === 5 ||
+                  HistoricalWoman.lastname.toUpperCase() ===
+                    PreviousGuesses[PreviousGuesses.length - 1])
+                  ? ""
+                  : open
+              }
+              toggle={toggle}
+            >
               <AccordionItem>
                 <AccordionHeader className="accordiontitle" targetId="1">
                   <div style={{ width: "100%" }}> How to Play</div>

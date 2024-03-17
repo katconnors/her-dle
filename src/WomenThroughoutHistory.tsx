@@ -36,6 +36,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
       link = props.woman.link;
       underscorelength = "";
       linktext = `Learn more about ${lastname} on Wikipedia`;
+      <br />;
     }
 
     return (
