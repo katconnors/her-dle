@@ -121,7 +121,7 @@ export const Women: Woman[] = [
     lastname: "Quintanilla",
     quote: "Anybody can be a role model, anybody can.",
     link: "https://en.wikipedia.org/wiki/Selena",
-    bio: "Selena Quintanilla-Pérez, known mononymously as Selena, was an American singer. Referred to as the 'Queen of Tejano Music', her contributions to music and fashion made her one of the most celebrated Mexican-American entertainers of the late 20th century.",
+    bio: 'Selena Quintanilla-Pérez, known mononymously as Selena, was an American singer. Referred to as the "Queen of Tejano Music", her contributions to music and fashion made her one of the most celebrated Mexican-American entertainers of the late 20th century.',
   },
 
   {
@@ -294,7 +294,7 @@ export const Women: Woman[] = [
     quote:
       "It's all about falling in love with yourself and sharing that love with someone who appreciates you.",
     link: "https://en.wikipedia.org/wiki/Eartha_Kitt",
-    bio: "Eartha Mae Kitt was an American singer and actress known for her highly distinctive singing style and her 1953 recording of 'Santa Baby'. Kitt found a new generation of fans through her roles in the Disney films The Emperor's New Groove and Holes.",
+    bio: 'Eartha Mae Kitt was an American singer and actress known for her highly distinctive singing style and her 1953 recording of "Santa Baby". Kitt found a new generation of fans through her roles in the Disney films The Emperor\'s New Groove and Holes.',
   },
   {
     puzzlenumber: 36,
@@ -377,7 +377,7 @@ export const Women: Woman[] = [
     quote:
       "I will not allow my life's light to be determined by the darkness around me.",
     link: "https://en.wikipedia.org/wiki/Sojourner_Truth",
-    bio: "Sojourner Truth was an American abolitionist and activist for African-American civil rights, women's rights, and alcohol temperance. Her best-known speech was delivered extemporaneously, at the Ohio Women's Rights Convention in Akron, Ohio. The speech became widely known during the Civil War by the title 'Ain't I a Woman?'",
+    bio: "Sojourner Truth was an American abolitionist and activist for African-American civil rights, women's rights, and alcohol temperance. Her best-known speech was delivered extemporaneously, at the Ohio Women's Rights Convention in Akron, Ohio. The speech became widely known during the Civil War by the title \"Ain't I a Woman?\"",
   },
   {
     puzzlenumber: 47,
