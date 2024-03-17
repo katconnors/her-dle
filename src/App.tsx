@@ -21,11 +21,25 @@ import {
 // height element resource:https://stackoverflow.com/questions/35153599/reactjs-get-height-of-an-element
 // https://stackoverflow.com/questions/61199316/why-is-ref-current-clientheight-always-possibly-null
 
+// Date objects: https://howtodoinjava.com/typescript/typescript-date-object/
+// https://www.basedash.com/blog/how-to-subtract-dates-in-typescript
+// https://stackoverflow.com/questions/14980014/how-can-i-calculate-the-time-between-2-dates-in-typescript
+
+// https://stackoverflow.com/questions/10428720/how-to-keep-indent-for-second-line-in-ordered-lists-via-css
+
 function App() {
   let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
+  // note that this date is zero indexed for month
+  const launchday = new Date(2024, 2, 16);
+
+  let currentday = new Date();
+
+  let daydifference = Math.floor(
+    (currentday.getTime() - launchday.getTime()) / (1000 * 60 * 60 * 24)
+  );
 
   React.useEffect(() => {
-    let WomanFromArray = Women[Math.floor(Math.random() * Women.length)];
+    let WomanFromArray = Women[daydifference % Women.length];
     UpdateWoman(WomanFromArray);
   }, []);
 
@@ -50,18 +64,13 @@ function App() {
         history.
       </header>
       <br />
-      <RefreshButton
-        message="New game/reload page"
-        onClick={() => window.location.reload()}
-      ></RefreshButton>{" "}
-      <br />
-      <br />
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
         <div className="successtext">
           {" "}
-          You figured out the name! Press button above to play again. <br />
+          You figured out the name! Check back tomorrow for another puzzle.{" "}
+          <br />
           <Confetti
             height={
               500 +
@@ -97,13 +106,27 @@ function App() {
                 <AccordionHeader className="accordiontitle" targetId="1">
                   <div style={{ width: "100%" }}> How to Play</div>
                 </AccordionHeader>
-                <AccordionBody accordionId="1" style={{ width: "180pt" }}>
-                  -Guess the last name of the woman attributed with the shown
-                  quote
-                  <br />
-                  -You have 5 guesses until the woman's name is revealed <br />{" "}
-                  -Letters that are green/underlined (in the Previous Guesses
-                  section below) appear in the woman's name
+                <AccordionBody
+                  className="accordiontext"
+                  accordionId="1"
+                  style={{ width: "180pt" }}
+                >
+                  <ol>
+                    <li>
+                      Guess the last name of the woman attributed with the shown
+                      quote
+                    </li>
+
+                    <li>
+                      Letters that are green/underlined (in the Previous Guesses
+                      section below) appear in the woman's name
+                    </li>
+                    <li>
+                      The woman's name is revealed after five guesses or a
+                      success
+                    </li>
+                    <li>Puzzles are changed daily, so check back!</li>
+                  </ol>
                 </AccordionBody>
               </AccordionItem>
             </Accordion>
