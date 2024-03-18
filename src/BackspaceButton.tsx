@@ -8,12 +8,7 @@ interface BackspaceButtonProps {
 
 function BackspaceButton(props: BackspaceButtonProps) {
   return (
-    <Button
-      size="sm"
-      className="backspacebutton"
-      type="button"
-      onClick={props.onClick}
-    >
+    <Button className="backspacebutton" type="button" onClick={props.onClick}>
       {props.message}
     </Button>
   );

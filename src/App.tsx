@@ -265,7 +265,7 @@ function App() {
                   onClick={() => UpdateAnswer([...AnswerValue, "P"])}
                 />
                 <BackspaceButton
-                  message="Backspace"
+                  message="←"
                   onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
                 />
               </div>
@@ -354,7 +354,7 @@ function App() {
                 <br></br>
 
                 <GuessButton
-                  message="Guess Name"
+                  message="Guess"
                   onClick={() => {
                     UpdateLengthAlert(false);
                     if (HistoricalWoman != null) {
