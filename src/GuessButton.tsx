@@ -8,7 +8,12 @@ interface GuessButtonProps {
 
 function GuessButton(props: GuessButtonProps) {
   return (
-    <Button className="guessbutton" type="button" onClick={props.onClick}>
+    <Button
+      size="sm"
+      className="guessbutton"
+      type="button"
+      onClick={props.onClick}
+    >
       {props.message}{" "}
     </Button>
   );

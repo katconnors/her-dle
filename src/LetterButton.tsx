@@ -8,7 +8,12 @@ interface LetterButtonProps {
 
 function LetterButton(props: LetterButtonProps) {
   return (
-    <Button className="letterbutton" type="button" onClick={props.onClick}>
+    <Button
+      size="sm"
+      className="letterbutton"
+      type="button"
+      onClick={props.onClick}
+    >
       {props.letter}
     </Button>
   );
