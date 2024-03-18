@@ -7,8 +7,8 @@ import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
 import herdle from "./herdle.jpg";
-import RefreshButton from "./RefreshButton";
 import Confetti from "react-confetti";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
   Accordion,
   AccordionItem,
@@ -18,7 +18,9 @@ import {
 
 import GuessLogic from "./GuessLogic";
 
-// github source for confetti: https://www.npmjs.com/package/react-confetti?activeTab=readme
+// Sources:
+// https://www.npmjs.com/package/react-confetti?activeTab=readme
+// https://www.npmjs.com/package/react-copy-to-clipboard
 
 // height element resource:https://stackoverflow.com/questions/35153599/reactjs-get-height-of-an-element
 // https://stackoverflow.com/questions/61199316/why-is-ref-current-clientheight-always-possibly-null
@@ -30,24 +32,27 @@ import GuessLogic from "./GuessLogic";
 // https://stackoverflow.com/questions/10428720/how-to-keep-indent-for-second-line-in-ordered-lists-via-css
 
 function App() {
-  let [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
+  const [HistoricalWoman, UpdateWoman] = useState<Woman | null>(null);
+
+  const [IfCopied, UpdateCopied] = useState<boolean>(false);
+
   // note that this date is zero indexed for month
-  const launchday = new Date(2024, 2, 16);
+  const launchday = new Date(2024, 2, 17);
 
-  let currentday = new Date();
+  const currentday = new Date();
 
-  let daydifference = Math.floor(
+  const daydifference = Math.floor(
     (currentday.getTime() - launchday.getTime()) / (1000 * 60 * 60 * 24)
   );
 
   React.useEffect(() => {
-    let WomanFromArray = Women[daydifference % Women.length];
+    const WomanFromArray = Women[daydifference % Women.length];
     UpdateWoman(WomanFromArray);
   }, []);
 
-  let [AnswerValue, UpdateAnswer] = useState<string[]>([]);
-  let [PreviousGuesses, AddGuess] = useState<string[]>([]);
-  let [showAlert, UpdateLengthAlert] = useState<boolean>(false);
+  const [AnswerValue, UpdateAnswer] = useState<string[]>([]);
+  const [PreviousGuesses, AddGuess] = useState<string[]>([]);
+  const [showAlert, UpdateLengthAlert] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState<string>("1");
   const toggle = (id: string) => {
@@ -69,9 +74,26 @@ function App() {
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
-        <div className="successtext">
-          {" "}
-          You figured out the name! Check back tomorrow for another puzzle.{" "}
+        <div>
+          <div className="successtext">
+            {" "}
+            You figured out the name! Check back tomorrow for another puzzle.{" "}
+          </div>
+          {IfCopied ? (
+            <Alert className="resultcopyalert"> Result copied </Alert>
+          ) : null}
+          <CopyToClipboard
+            text={`I solved the Women's History Her-dle puzzle in ${
+              PreviousGuesses.length
+            } ${
+              PreviousGuesses.length === 1 ? "guess" : "guesses"
+            }! Try solving it at her-dle.katrinaconnors.com`}
+          >
+            <button onClick={() => UpdateCopied(true)}>
+              {" "}
+              Share your result with friends!{" "}
+            </button>
+          </CopyToClipboard>
           <br />
           <Confetti
             height={
