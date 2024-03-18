@@ -138,21 +138,21 @@ function App() {
                   <ol>
                     <li>
                       Guess the last name of the woman attributed with the shown
-                      quote
+                      quote.
                     </li>
 
                     <li>
                       The Previous Guesses section below will give you hints:
                       green background letters appear in the woman's name, in
-                      that location
+                      that location.
                     </li>
                     <li>
                       Orange background letters appear in the woman's name in a
-                      different location
+                      different location.
                     </li>
                     <li>
                       The woman's name is revealed after five guesses or a
-                      success
+                      success.
                     </li>
                     <li>Puzzles are changed daily, so check back!</li>
                   </ol>
