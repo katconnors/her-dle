@@ -17,6 +17,7 @@ import {
 } from "reactstrap";
 
 import GuessLogic from "./GuessLogic";
+import Emoji from "./Emoji";
 
 // Sources:
 // https://www.npmjs.com/package/react-confetti?activeTab=readme
@@ -83,11 +84,12 @@ function App() {
             <Alert className="resultcopyalert"> Result copied </Alert>
           ) : null}
           <CopyToClipboard
-            text={`I solved the Women's History Her-dle puzzle in ${
+            text={`Women's History Her-dle puzzle: ${
               PreviousGuesses.length
-            } ${
-              PreviousGuesses.length === 1 ? "guess" : "guesses"
-            }! Try solving it at her-dle.katrinaconnors.com`}
+            }/5 ${Emoji(
+              PreviousGuesses,
+              HistoricalWoman.lastname.toUpperCase()
+            )} \n Try solving it at https://her-dle.katrinaconnors.com`}
           >
             <button onClick={() => UpdateCopied(true)}>
               {" "}
