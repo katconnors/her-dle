@@ -38,7 +38,7 @@ function App() {
   const [IfCopied, UpdateCopied] = useState<boolean>(false);
 
   // note that this date is zero indexed for month
-  const launchday = new Date(2024, 2, 17);
+  const launchday = new Date(2024, 2, 18);
 
   const currentday = new Date();
 
