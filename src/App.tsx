@@ -89,7 +89,7 @@ function App() {
             }/5 ${Emoji(
               PreviousGuesses,
               HistoricalWoman.lastname.toUpperCase()
-            )} \n Try solving it at https://her-dle.katrinaconnors.com`}
+            )} \n Try solving it at https://her-dle.katrinaconnors.com/`}
           >
             <button onClick={() => UpdateCopied(true)}>
               {" "}
