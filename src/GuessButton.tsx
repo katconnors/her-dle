@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "reactstrap";
 
 interface GuessButtonProps {
   message: string;
@@ -7,9 +8,9 @@ interface GuessButtonProps {
 
 function GuessButton(props: GuessButtonProps) {
   return (
-    <button className="guessbutton" type="button" onClick={props.onClick}>
+    <Button className="guessbutton" type="button" onClick={props.onClick}>
       {props.message}{" "}
-    </button>
+    </Button>
   );
 }
 

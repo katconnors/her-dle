@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "reactstrap";
 
 interface LetterButtonProps {
   letter: string;
@@ -7,9 +8,9 @@ interface LetterButtonProps {
 
 function LetterButton(props: LetterButtonProps) {
   return (
-    <button className="letterbutton" type="button" onClick={props.onClick}>
+    <Button className="letterbutton" type="button" onClick={props.onClick}>
       {props.letter}
-    </button>
+    </Button>
   );
 }
 

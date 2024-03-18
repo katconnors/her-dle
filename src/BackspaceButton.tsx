@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "reactstrap";
 
 interface BackspaceButtonProps {
   message: string;
@@ -7,9 +8,9 @@ interface BackspaceButtonProps {
 
 function BackspaceButton(props: BackspaceButtonProps) {
   return (
-    <button className="backspacebutton" type="button" onClick={props.onClick}>
+    <Button className="backspacebutton" type="button" onClick={props.onClick}>
       {props.message}
-    </button>
+    </Button>
   );
 }
 

@@ -83,18 +83,15 @@
   border: black;
 
   border-radius: 20%;
-  background-color: #c3c3c4;
 }
 
 .backspacebutton {
   border-radius: 10%;
   border: black;
-  background-color: #c3c3c4;
 }
 
 .guessbutton {
   border-radius: 10%;
-  background-color: #c3c3c4;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
