@@ -27,6 +27,10 @@
   font-weight: 600;
 }
 
+.letterDisplay {
+  border: 1pt solid black;
+}
+
 .accordion-button {
   font-size: 18pt;
   text-align: center;

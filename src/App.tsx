@@ -16,6 +16,8 @@ import {
   AccordionHeader,
 } from "reactstrap";
 
+import GuessLogic from "./GuessLogic";
+
 // github source for confetti: https://www.npmjs.com/package/react-confetti?activeTab=readme
 
 // height element resource:https://stackoverflow.com/questions/35153599/reactjs-get-height-of-an-element
@@ -118,8 +120,13 @@ function App() {
                     </li>
 
                     <li>
-                      Letters that are green/underlined (in the Previous Guesses
-                      section below) appear in the woman's name
+                      The Previous Guesses section below will give you hints:
+                      green background letters appear in the woman's name, in
+                      that location
+                    </li>
+                    <li>
+                      Orange background letters appear in the woman's name in a
+                      different location
                     </li>
                     <li>
                       The woman's name is revealed after five guesses or a
@@ -151,33 +158,22 @@ function App() {
                 {PreviousGuesses.map((guess) => {
                   if (HistoricalWoman != null) {
                     const WomanName = HistoricalWoman.lastname.toUpperCase();
+                    const colorArray = GuessLogic(guess, WomanName);
                     return (
                       <div>
-                        {guess.split("").map((letter) => {
-                          if (WomanName.includes(letter)) {
-                            return (
-                              <div
-                                style={{
-                                  display: "inline-block",
-                                  color: "green",
-                                  textDecorationLine: "underline",
-                                }}
-                              >
-                                {letter}
-                              </div>
-                            );
-                          } else {
-                            return (
-                              <div
-                                style={{
-                                  display: "inline-block",
-                                  color: "black",
-                                }}
-                              >
-                                {letter}
-                              </div>
-                            );
-                          }
+                        {guess.split("").map((letter, i) => {
+                          return (
+                            <div
+                              className="letterDisplay"
+                              style={{
+                                display: "inline-block",
+                                backgroundColor: colorArray[i],
+                                color: "white",
+                              }}
+                            >
+                              {letter}
+                            </div>
+                          );
                         })}
                       </div>
                     );
