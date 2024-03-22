@@ -8,7 +8,7 @@ function GuessLogic(guess: string, WomanName: string) {
   // green logic
   for (let i = 0; i < guess.length; i += 1) {
     if (guess[i] === WomanName[i]) {
-      colorArray[i] = "51C446";
+      colorArray[i] = "green";
     }
   }
 
@@ -16,7 +16,7 @@ function GuessLogic(guess: string, WomanName: string) {
   for (let i = 0; i < guess.length; i += 1) {
     if (WomanName.includes(guess[i])) {
       if (guess[i] !== WomanName[i]) {
-        colorArray[i] = "E19C27";
+        colorArray[i] = "orange";
       }
     }
   }
