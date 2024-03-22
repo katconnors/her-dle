@@ -66,7 +66,9 @@ function App() {
 
   return (
     <div ref={ref} className="App">
-      <img src={herdle} className="logo" alt="logo" />
+      <a href="https://her-dle.katrinaconnors.com/">
+        <img src={herdle} className="logo" alt="logo" />
+      </a>
       <header className="headertitle">
         Her-dle: A Wordle inspired game that celebrates women throughout
         history.
