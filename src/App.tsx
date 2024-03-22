@@ -119,7 +119,7 @@ function App() {
           <div>
             <Card
               style={{
-                width: "250pt",
+                width: "200pt",
               }}
             >
               <CardBody>
@@ -177,7 +177,7 @@ function App() {
                 <AccordionBody
                   className="accordiontext"
                   accordionId="1"
-                  style={{ width: "250pt" }}
+                  style={{ width: "200pt" }}
                 >
                   <ol>
                     <li>

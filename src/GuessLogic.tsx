@@ -5,16 +5,18 @@ function GuessLogic(guess: string, WomanName: string) {
     colorArray.push("black");
   }
 
+  // green logic
   for (let i = 0; i < guess.length; i += 1) {
     if (guess[i] === WomanName[i]) {
-      colorArray[i] = "green";
+      colorArray[i] = "51C446";
     }
   }
 
+  // orange logic
   for (let i = 0; i < guess.length; i += 1) {
     if (WomanName.includes(guess[i])) {
       if (guess[i] !== WomanName[i]) {
-        colorArray[i] = "orange";
+        colorArray[i] = "E19C27";
       }
     }
   }
