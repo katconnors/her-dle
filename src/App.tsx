@@ -117,6 +117,48 @@ function App() {
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <div>
+            <Card
+              style={{
+                width: "250pt",
+              }}
+            >
+              <CardBody>
+                <CardTitle className="cardtitle" tag="h4">
+                  Your Guesses
+                </CardTitle>
+                <Badge color="primary">
+                  Guesses left: {5 - PreviousGuesses.length}{" "}
+                </Badge>{" "}
+                <br />
+                <CardText>
+                  {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
+                  {PreviousGuesses.map((guess) => {
+                    if (HistoricalWoman != null) {
+                      const WomanName = HistoricalWoman.lastname.toUpperCase();
+                      const colorArray = GuessLogic(guess, WomanName);
+                      return (
+                        <div>
+                          {guess.split("").map((letter, i) => {
+                            return (
+                              <div
+                                className="letterDisplay"
+                                style={{
+                                  display: "inline-block",
+                                  backgroundColor: colorArray[i],
+                                  color: "white",
+                                }}
+                              >
+                                {letter}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    }
+                  })}
+                </CardText>
+              </CardBody>
+            </Card>
             <Accordion
               open={
                 HistoricalWoman != null &&
@@ -135,7 +177,7 @@ function App() {
                 <AccordionBody
                   className="accordiontext"
                   accordionId="1"
-                  style={{ width: "180pt" }}
+                  style={{ width: "250pt" }}
                 >
                   <ol>
                     <li>
@@ -144,7 +186,7 @@ function App() {
                     </li>
 
                     <li>
-                      The Previous Guesses section below will give you hints:
+                      "Your Guesses" section will give you hints after a guess:
                       green background letters appear in the woman's name, in
                       that location.
                     </li>
@@ -164,48 +206,6 @@ function App() {
           </div>
 
           <br />
-          <Card
-            style={{
-              width: "180pt",
-            }}
-          >
-            <CardBody>
-              <CardTitle className="cardtitle" tag="h4">
-                Previous Guesses
-              </CardTitle>
-              <Badge color="primary">
-                Guesses left: {5 - PreviousGuesses.length}{" "}
-              </Badge>{" "}
-              <br />
-              <CardText>
-                {/* https://stackoverflow.com/questions/1966476/how-can-i-process-each-letter-of-text-using-javascript */}
-                {PreviousGuesses.map((guess) => {
-                  if (HistoricalWoman != null) {
-                    const WomanName = HistoricalWoman.lastname.toUpperCase();
-                    const colorArray = GuessLogic(guess, WomanName);
-                    return (
-                      <div>
-                        {guess.split("").map((letter, i) => {
-                          return (
-                            <div
-                              className="letterDisplay"
-                              style={{
-                                display: "inline-block",
-                                backgroundColor: colorArray[i],
-                                color: "white",
-                              }}
-                            >
-                              {letter}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    );
-                  }
-                })}
-              </CardText>
-            </CardBody>
-          </Card>
         </div>
 
         <div className="answerwithkeyboard">
