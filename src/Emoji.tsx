@@ -8,9 +8,9 @@ function Emoji(PreviousGuesses: string[], WomanName: string) {
     EmojiList.push("\n");
     const ColorArray = GuessLogic(guess, WomanName);
     for (const color of ColorArray) {
-      if (color === "51C446") {
+      if (color === "green") {
         EmojiList.push("🟩");
-      } else if (color === "E19C27") {
+      } else if (color === "orange") {
         EmojiList.push("🟧");
       } else {
         EmojiList.push("⬛");
