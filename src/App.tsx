@@ -70,8 +70,7 @@ function App() {
         <img src={herdle} className="logo" alt="logo" />
       </a>
       <header className="headertitle">
-        Her-dle: A Wordle inspired game that celebrates women throughout
-        history.
+        Her-dle: A Wordle inspired game that celebrates women throughout history
       </header>
       <br />
       {HistoricalWoman != null &&
