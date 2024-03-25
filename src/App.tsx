@@ -6,7 +6,7 @@ import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
-import herdle from "./her-dlenew.jpg";
+import herdle from "./her-dlenew.png";
 import Confetti from "react-confetti";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
