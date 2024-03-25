@@ -6,7 +6,7 @@ import { Women, Woman } from "./Women";
 import GuessButton from "./GuessButton";
 import BackspaceButton from "./BackspaceButton";
 import { Alert, Card, CardBody, CardTitle, CardText, Badge } from "reactstrap";
-import herdle from "./her-dlelogo.jpg";
+import herdle from "./her-dlenew.jpg";
 import Confetti from "react-confetti";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
@@ -216,7 +216,12 @@ function App() {
               modify your guess.
             </Alert>
           ) : null}{" "}
-          <div className="answervalue"> {AnswerValue}</div> <br />
+          <div className="answervalue"> {AnswerValue}</div>
+          {/* < 
+            onkeydown= () => UpdateAnswer([...AnswerValue, ""])}
+            
+            /> */}
+          <br />
           {PreviousGuesses.length >= 5 ||
           HistoricalWoman == null ||
           HistoricalWoman.lastname.toUpperCase() ===
