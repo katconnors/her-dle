@@ -76,7 +76,7 @@ function App() {
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
-        <div>
+        <div className="successcopy">
           <div className="successtext">
             {" "}
             You figured out the name! Check back tomorrow for another puzzle.{" "}
@@ -92,16 +92,18 @@ function App() {
               HistoricalWoman.lastname.toUpperCase()
             )} \n Try solving it at https://her-dle.katrinaconnors.com/`}
           >
-            <button onClick={() => UpdateCopied(true)}>
-              {" "}
-              Click here to copy/share your result: Women's History Her-dle
-              puzzle: {PreviousGuesses.length}/5
+            <Card className="copyCard">
+              Women's History Her-dle puzzle: {PreviousGuesses.length}/5
               {Emoji(
                 PreviousGuesses,
                 HistoricalWoman.lastname.toUpperCase()
               )}{" "}
               Try solving it at https://her-dle.katrinaconnors.com/
-            </button>
+              <button onClick={() => UpdateCopied(true)}>
+                {" "}
+                Copy/share result{" "}
+              </button>
+            </Card>
           </CopyToClipboard>
           <br />
           <Confetti
@@ -117,6 +119,7 @@ function App() {
           <br />
         </div>
       ) : null}
+
       <WomenThroughoutHistory
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}

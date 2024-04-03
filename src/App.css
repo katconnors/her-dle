@@ -9,11 +9,24 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.copyCard {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .headertitle {
   font-size: 12pt;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: gray;
+}
+
+.successcopy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .successtext {
