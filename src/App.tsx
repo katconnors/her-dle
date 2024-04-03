@@ -94,7 +94,13 @@ function App() {
           >
             <button onClick={() => UpdateCopied(true)}>
               {" "}
-              Share your result with friends!{" "}
+              Click here to copy your result to share: Women's History Her-dle
+              puzzle: {PreviousGuesses.length}/5
+              {Emoji(
+                PreviousGuesses,
+                HistoricalWoman.lastname.toUpperCase()
+              )}{" "}
+              Try solving it at https://her-dle.katrinaconnors.com/
             </button>
           </CopyToClipboard>
           <br />
