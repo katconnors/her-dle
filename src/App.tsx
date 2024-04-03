@@ -94,7 +94,7 @@ function App() {
           >
             <button onClick={() => UpdateCopied(true)}>
               {" "}
-              Click here to copy your result to share: Women's History Her-dle
+              Click here to copy/share your result: Women's History Her-dle
               puzzle: {PreviousGuesses.length}/5
               {Emoji(
                 PreviousGuesses,
