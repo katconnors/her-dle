@@ -169,7 +169,7 @@ export const Women: Woman[] = [
     puzzlenumber: 19,
     lastname: "Yalow",
     quote:
-      "We still live in a world in which a significant fraction of people, including women, believe that a woman belongs and want to belong exclusively in the home.",
+      "We still live in a world in which a significant fraction of people, including women, believe that a woman belongs and wants to belong exclusively in the home.",
     link: "https://en.wikipedia.org/wiki/Rosalyn_Sussman_Yalow",
     bio: "Rosalyn Sussman Yalow was an American medical physicist, and a co-winner of the 1977 Nobel Prize in Physiology or Medicine for development of the radioimmunoassay technique.",
   },
