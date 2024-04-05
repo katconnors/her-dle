@@ -10,7 +10,7 @@
 }
 
 .copyCard {
-  width: 20%;
+  flex-basis: auto;
   display: flex;
   align-items: center;
   justify-content: center;
