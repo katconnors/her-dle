@@ -70,8 +70,19 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 20pt;
   align-items: center;
+}
+
+/* padding for larger screen */
+/* https://www.smashingmagazine.com/2010/07/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/ */
+@media only screen and (min-device-width: 400px) {
+  .answerwithkeyboard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 20pt;
+    align-items: center;
+  }
 }
 
 .answervalue {
