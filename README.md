@@ -1,6 +1,6 @@
 # Her-dle
 
-Her-dle is a guessing game inspired by Wordle; its intent is to share facts about women throughout history.
+Her-dle is an educational game inspired by Wordle; its intent is to share facts about women throughout history.
 It was initiated during Women's History Month 2024.
 
 ![alt text](herdlecapture.jpg) <br>
