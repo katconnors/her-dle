@@ -124,6 +124,14 @@ function App() {
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
       />
+      <div>
+        {showAlert ? (
+          <Alert color="primary">
+            Length of guess does not match the length hints above. Please modify
+            your guess.
+          </Alert>
+        ) : null}{" "}
+      </div>
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <div>
@@ -219,12 +227,6 @@ function App() {
         </div>
 
         <div className="answerwithkeyboard">
-          {showAlert ? (
-            <Alert color="primary">
-              Length of guess does not match the length hints above. Please
-              modify your guess.
-            </Alert>
-          ) : null}{" "}
           <div className="answervalue"> {AnswerValue}</div>
           {/* < 
             onkeydown= () => UpdateAnswer([...AnswerValue, ""])}
