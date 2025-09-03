@@ -42,12 +42,25 @@
   font-size: 15pt;
 }
 
-.attribution {
-  font-size: 5pt;
+.image-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 18pt;
+  align-items: center;
 }
 
-.biography {
-  font-weight: 600;
+.portrait {
+  max-height: 500px;
+  max-width: 300px;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  font-size: 5pt;
 }
 
 .letterDisplay {
@@ -116,17 +129,40 @@
 .letterbutton {
   font-size: 10pt;
   border: black;
-
   border-radius: 20%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.letterbutton:hover {
+  font-size: 10pt;
+  border: black;
+  border-radius: 20%;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .backspacebutton {
   border-radius: 10%;
   border: black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.backspacebutton:hover {
+  border-radius: 10%;
+  border: black;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .guessbutton {
   border-radius: 10%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guessbutton:hover {
+  border-radius: 10%;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */

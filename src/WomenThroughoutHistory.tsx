@@ -49,8 +49,12 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
         {lastname || UnderscoreArray} <br />
         {underscorelength}
         <br />
-        <img src={image} />
-        <div className="attribution">{attribution}</div>
+        <div className="image-section">
+          <div className="portrait">
+            <img src={image} />
+          </div>
+          <div className="attribution"> {attribution}</div>
+        </div>
         <br />
         <div className="biography">{bio}</div>
         <br />
