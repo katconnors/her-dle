@@ -51,6 +51,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
         <br />
         <img src={image} />
         <div className="attribution">{attribution}</div>
+        <br />
         <div className="biography">{bio}</div>
         <br />
         <a href={link} target="_blank">
