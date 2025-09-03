@@ -23,6 +23,8 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     let lastname = "";
     let bio = "";
     let underscorelength = `${UnderscoreArray.length} letters`;
+    let image = "";
+    let attribution = "";
     let link = "";
     let linktext = "";
 
@@ -33,6 +35,8 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     ) {
       lastname = props.woman.lastname;
       bio = props.woman.bio;
+      image = props.woman.image;
+      attribution = props.woman.attribution;
       link = props.woman.link;
       underscorelength = "";
       linktext = `Learn more about ${lastname} on Wikipedia`;
@@ -45,6 +49,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
         {lastname || UnderscoreArray} <br />
         {underscorelength}
         <br />
+        <img src={image} />
         <div className="biography">{bio}</div>
         <br />
         <a href={link} target="_blank">
