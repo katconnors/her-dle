@@ -61,6 +61,8 @@
 
 .attribution {
   font-size: 5pt;
+  max-height: 500px;
+  max-width: 300px;
 }
 
 .letterDisplay {

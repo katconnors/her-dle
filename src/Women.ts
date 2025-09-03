@@ -5,7 +5,7 @@ export interface Woman {
   link: string;
   bio: string;
   image: string;
-  attribution: string;
+  attribution: string | null;
 }
 
 // Bio sourced and modified from Wikipedia

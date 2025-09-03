@@ -23,7 +23,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     let lastname = "";
     let bio = "";
     let underscorelength = `${UnderscoreArray.length} letters`;
-    let image = "";
+    let image = undefined;
     let attribution = "";
     let link = "";
     let linktext = "";
