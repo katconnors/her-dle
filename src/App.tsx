@@ -73,6 +73,7 @@ function App() {
         Her-dle: A Wordle inspired game that celebrates women throughout history
       </header>
       <br />
+
       {HistoricalWoman != null &&
       HistoricalWoman.lastname.toUpperCase() ===
         PreviousGuesses[PreviousGuesses.length - 1] ? (
@@ -132,6 +133,7 @@ function App() {
           </Alert>
         ) : null}{" "}
       </div>
+      <div className="answervalue"> {AnswerValue}</div>
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <div>
@@ -227,7 +229,6 @@ function App() {
         </div>
 
         <div className="answerwithkeyboard">
-          <div className="answervalue"> {AnswerValue}</div>
           {/* < 
             onkeydown= () => UpdateAnswer([...AnswerValue, ""])}
             

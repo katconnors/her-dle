@@ -6,7 +6,7 @@
   padding-left: 5%;
   padding-right: 5%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .copyCard {
@@ -19,10 +19,10 @@
 }
 
 .headertitle {
-  font-size: 10pt;
+  font-size: 6pt;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  color: gray;
+  color: lightgray;
 }
 
 .successcopy {
@@ -40,6 +40,7 @@
 
 .womanprops {
   font-size: 15pt;
+  font-weight: bold;
 }
 
 .image-section {
