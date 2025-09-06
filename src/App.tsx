@@ -124,6 +124,7 @@ function App() {
       <WomenThroughoutHistory
         woman={HistoricalWoman}
         prevguess={PreviousGuesses}
+        answer={AnswerValue}
       />
       <div>
         {showAlert ? (
@@ -133,7 +134,7 @@ function App() {
           </Alert>
         ) : null}{" "}
       </div>
-      <div className="answervalue"> {AnswerValue}</div>
+      {/* <div className="answervalue"> {AnswerValue}</div> */}
       <div className="cardkeyboard">
         <div className="guidecards" style={{}}>
           <div>

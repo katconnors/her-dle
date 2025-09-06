@@ -6,23 +6,25 @@ import { Woman } from "./Women";
 interface WomenThroughoutHistoryProps {
   woman: Woman | null;
   prevguess: string[];
+  answer: string[];
 }
 
 function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
   if (props.woman !== null) {
     const WomanName = props.woman.lastname;
     let UnderscoreArray = [];
-    for (let letter of WomanName) {
-      if (letter !== " ") {
-        UnderscoreArray.push("_");
+    let NameLength = WomanName.length;
+    for (let i = 0; i < Math.max(NameLength, props.answer.length); i++) {
+      if (props.answer[i]) {
+        UnderscoreArray.push(props.answer[i]);
       } else {
-        UnderscoreArray.push(" ");
+        UnderscoreArray.push("_");
       }
     }
 
     let lastname = "";
     let bio = "";
-    let underscorelength = `${UnderscoreArray.length} letters`;
+    let underscorelength = `${WomanName.length} letters`;
     let image = undefined;
     let attribution = "";
     let link = "";
@@ -46,7 +48,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     return (
       <div className="womanprops">
         "{props.woman.quote}"<br />
-        {lastname || UnderscoreArray} <br />
+        {UnderscoreArray} <br />
         {underscorelength}
         <br />
         <div className="image-section">
