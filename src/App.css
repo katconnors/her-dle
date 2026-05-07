@@ -5,8 +5,9 @@
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
 
 .copyCard {
@@ -20,8 +21,9 @@
 
 .headertitle {
   font-size: 6pt;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   color: lightgray;
 }
 
@@ -134,7 +136,9 @@
   font-size: 10pt;
   border: black;
   border-radius: 20%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .letterbutton:hover {
@@ -148,7 +152,9 @@
 .backspacebutton {
   border-radius: 10%;
   border: black;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .backspacebutton:hover {
@@ -160,7 +166,9 @@
 
 .guessbutton {
   border-radius: 10%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .guessbutton:hover {

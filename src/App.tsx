@@ -43,7 +43,7 @@ function App() {
   const currentday = new Date();
 
   const daydifference = Math.floor(
-    (currentday.getTime() - launchday.getTime()) / (1000 * 60 * 60 * 24)
+    (currentday.getTime() - launchday.getTime()) / (1000 * 60 * 60 * 24),
   );
 
   React.useEffect(() => {
@@ -80,7 +80,8 @@ function App() {
         <div className="successcopy">
           <div className="successtext">
             {" "}
-            You figured out the name! Check back tomorrow for another puzzle.{" "}
+            You figured out the name! Check back tomorrow for another
+            puzzle.{" "}
           </div>
           {IfCopied ? (
             <Alert className="resultcopyalert"> Result copied </Alert>
@@ -90,14 +91,14 @@ function App() {
               PreviousGuesses.length
             }/5 ${Emoji(
               PreviousGuesses,
-              HistoricalWoman.lastname.toUpperCase()
+              HistoricalWoman.lastname.toUpperCase(),
             )} \n Try solving it at https://her-dle.katrinaconnors.com/`}
           >
             <Card className="copyCard">
               Women's History Her-dle puzzle: {PreviousGuesses.length}/5
               {Emoji(
                 PreviousGuesses,
-                HistoricalWoman.lastname.toUpperCase()
+                HistoricalWoman.lastname.toUpperCase(),
               )}{" "}
               Try solving it at https://her-dle.katrinaconnors.com/
               <button onClick={() => UpdateCopied(true)}>
