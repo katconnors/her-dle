@@ -26,7 +26,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Katherine_Johnson",
     bio: "Creola Katherine Johnson was an American human computer whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. crewed spaceflights.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Katherine_Johnson_1983.jpg/800px-Katherine_Johnson_1983.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Katherine_Johnson_1983.jpg/500px-Katherine_Johnson_1983.jpg",
     attribution: "public domain image",
   },
   //public domain image
@@ -38,7 +38,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg",
     bio: "Joan Ruth Bader Ginsburg was an American lawyer and jurist who served as an associate justice of the Supreme Court of the United States. Ginsburg spent much of her legal career as an advocate for gender equality and women's rights, winning many arguments before the Supreme Court.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ruth_Bader_Ginsburg_2016_portrait.jpg/800px-Ruth_Bader_Ginsburg_2016_portrait.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ruth_Bader_Ginsburg_2016_portrait.jpg/960px-Ruth_Bader_Ginsburg_2016_portrait.jpg",
     attribution: "public domain image",
   },
   //no restrictions image
@@ -50,7 +50,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Chien-Shiung_Wu",
     bio: "Chien-Shiung Wu was a Chinese-American particle and experimental physicist. Wu worked on the Manhattan Project, where she helped develop the process for separating uranium into uranium-235 and uranium-238 isotopes by gaseous diffusion.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg/800px-Chien-shiung_Wu_%281912-1997%29_C.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chien-shiung_Wu_%281912-1997%29_C.jpg/960px-Chien-shiung_Wu_%281912-1997%29_C.jpg",
     attribution: "no copyright restrictions image",
   },
   //public domain
@@ -62,7 +62,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Maya_Angelou",
     bio: "Maya Angelou was an American memoirist, poet, and civil rights activist. She received dozens of awards and more than 50 honorary degrees. She made a deliberate attempt to challenge the common structure of the autobiography by critiquing, changing and expanding the genre.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/800px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/960px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -86,7 +86,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Kalpana_Chawla",
     bio: "Kalpana Chawla was an Indian-born American astronaut and aerospace engineer who was the first woman of Indian origin to fly to space. She first flew on Space Shuttle Columbia in 1997 as a mission specialist and primary robotic arm operator aboard STS-87.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg/800px-Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg/960px-Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -97,7 +97,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Grace_Hopper",
     bio: "Grace Brewster Hopper was an American computer scientist, mathematician, and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg/800px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg/960px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -109,7 +109,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Ada_Lovelace",
     bio: "Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png/800px-Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png",
     attribution: "public domain image",
   },
   //public domain
@@ -120,7 +120,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Marie_Curie",
     bio: "Maria Salomea Skłodowska-Curie, known simply as Marie Curie, was a Polish and naturalised-French physicist and chemist who conducted pioneering research on radioactivity. Marie won the 1911 Nobel Prize in Chemistry for her discovery of the elements polonium and radium, using techniques she invented for isolating radioactive isotopes.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/800px-Marie_Curie_c._1920s.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/960px-Marie_Curie_c._1920s.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -132,7 +132,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Harriet_Tubman",
     bio: "Harriet Tubman was an American abolitionist and social activist. After escaping slavery, Tubman made some 13 missions to rescue approximately 70 enslaved people, including her family and friends, using the network of antislavery activists and safe houses known collectively as the Underground Railroad.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%28Portrait_of_Harriet_Tubman%29_%28LOC%29_%2838899564300%29_%28cropped_3x4%29.jpg/800px-%28Portrait_of_Harriet_Tubman%29_%28LOC%29_%2838899564300%29_%28cropped_3x4%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg/960px-Carte-de-visite_portrait_of_Harriet_Tubman_%28cropped%29.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -143,7 +143,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor",
     bio: "Sandra Day O'Connor was an American attorney, politician, and jurist who served as an associate justice of the Supreme Court of the United States. She often wrote concurring opinions that sought to limit the reach of the majority holding.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sandra_Day_O%27Connor.jpg/800px-Sandra_Day_O%27Connor.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sandra_Day_O%27Connor.jpg/960px-Sandra_Day_O%27Connor.jpg",
     attribution: "public domain image",
   },
 
@@ -168,7 +168,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Celia_Cruz",
     bio: "Celia Caridad Cruz Alfonso, known as Celia Cruz, was a Cuban singer and one of the most popular Latin artists of the 20th century. She had sold over 10 million records, making her one of the best-selling Latin music artists.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/7/75/Celia_Cruz%2C_1957.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Celia_Cruz_1957_color.jpg",
     attribution: "public domain image",
   },
   //creative commons
@@ -193,7 +193,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Sally_Ride",
     bio: "Sally Kristen Ride was an American astronaut and physicist. In 1983 she became the first American woman and the third woman to fly in space, and she is the first astronaut known to have been LGBTQ.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sally_Ride_%281984%29.jpg/800px-Sally_Ride_%281984%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sally_Ride_%281984%29.jpg/960px-Sally_Ride_%281984%29.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -205,7 +205,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Harriet_Beecher_Stowe",
     bio: "Harriet Elisabeth Beecher Stowe was an American author and abolitionist. She came from the religious Beecher family and wrote the popular novel Uncle Tom's Cabin, which depicts the harsh conditions experienced by enslaved African Americans.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Beecher-Stowe.jpg/500px-Beecher-Stowe.jpg?20091021154502",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Beecher-Stowe.jpg/960px-Beecher-Stowe.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -217,7 +217,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Louisa_May_Alcott",
     bio: "Louisa May Alcott was an American novelist, short story writer, and poet best known for writing the novel Little Women. Alcott was an abolitionist and a feminist and remained unmarried throughout her life. She also spent her life active in reform movements such as temperance and women's suffrage.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Louisa_May_Alcott%2C_c._1870_-_Warren%27s_Portraits%2C_Boston.jpg/800px-Louisa_May_Alcott%2C_c._1870_-_Warren%27s_Portraits%2C_Boston.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Louisa_May_Alcott%2C_c._1870_-_Warren%27s_Portraits%2C_Boston.jpg/960px-Louisa_May_Alcott%2C_c._1870_-_Warren%27s_Portraits%2C_Boston.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -229,7 +229,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/May_Sinclair",
     bio: "May Sinclair was the pseudonym of Mary Amelia St. Clair, a popular British writer who wrote about two dozen novels, short stories and poetry. She was an active suffragist, and member of the Woman Writers' Suffrage League. She is attributed with first using the term 'stream of consciousness' in a literary context.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/May_Sinclair_001.jpg/800px-May_Sinclair_001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/May_Sinclair_001.jpg/960px-May_Sinclair_001.jpg",
     attribution: "public domain image",
   },
   //public domain
@@ -241,7 +241,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Rosalyn_Sussman_Yalow",
     bio: "Rosalyn Sussman Yalow was an American medical physicist, and a co-winner of the 1977 Nobel Prize in Physiology or Medicine for development of the radioimmunoassay technique.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Rosalyn_Yalow.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rosalyn_Yalow.jpg/1920px-Rosalyn_Yalow.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -253,7 +253,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Jane_Addams",
     bio: "Laura Jane Addams was an American settlement activist, reformer, social worker, sociologist, public administrator, philosopher, and author. She was a co-founder of the American Civil Liberties Union (ACLU).",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jane_Addams_-_Bain_News_Service.jpg/800px-Jane_Addams_-_Bain_News_Service.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jane_Addams_-_Bain_News_Service.jpg/960px-Jane_Addams_-_Bain_News_Service.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -264,7 +264,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Frida_Kahlo",
     bio: "Magdalena Carmen Frida Kahlo y Calderón was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society. She is also known for painting about her experience of chronic pain.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/800px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/960px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -276,7 +276,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Florence_Nightingale",
     bio: "Florence Nightingale was an English social reformer, statistician and the founder of modern nursing. Nightingale came to prominence while serving as a manager and trainer of nurses during the Crimean War. She significantly reduced death rates by improving hygiene and living standards.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/800px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/960px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -288,7 +288,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Emmeline_Pankhurst",
     bio: "Emmeline Pankhurst was an English political activist who organised the British suffragette movement and helped women win the right to vote. She was widely criticised for her militant tactics, and historians disagree about their effectiveness, but her work is recognised as a crucial element in achieving women's suffrage in the United Kingdom.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Emmeline_Pankhurst%2C_seated_%281913%29.jpg/800px-Emmeline_Pankhurst%2C_seated_%281913%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Emmeline_Pankhurst%2C_seated_%281913%29.jpg/960px-Emmeline_Pankhurst%2C_seated_%281913%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -299,7 +299,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Nellie_Bly",
     bio: "Elizabeth Cochrane Seaman, better known by her pen name Nellie Bly, was an American journalist, who was widely known for her record-breaking trip around the world in 72 days, and an exposé in which she worked undercover to report on a mental institution from within.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nellie_Bly_2.jpg/800px-Nellie_Bly_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/52/Nellie_Bly_2.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -311,7 +311,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Rosa_Parks",
     bio: 'Rosa Louise McCauley Parks was an American activist in the civil rights movement best known for her pivotal role in the Montgomery bus boycott. The United States Congress has honored her as "the first lady of civil rights" and "the mother of the freedom movement".',
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/81/Rosa_Parks_1955_2_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rosa_Parks%2C_November_1956_%28cropped%29.jpg/960px-Rosa_Parks%2C_November_1956_%28cropped%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -323,7 +323,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Sophia_Jex-Blake",
     bio: "Sophia Louisa Jex-Blake was an English physician, teacher, and feminist. She led the campaign to secure women access to a university education, when six other women and she, collectively known as the Edinburgh Seven, began studying medicine at the University of Edinburgh.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sophia_Jex-Blake_Aged_25.jpg/800px-Sophia_Jex-Blake_Aged_25.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sophia_Jex-Blake_Aged_25.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -334,7 +334,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Lise_Meitner",
     bio: "Lise Meitner was an Austrian-Swedish physicist who was one of those responsible for the discovery of the element protactinium and nuclear fission.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Lise_Meitner_NatGeo.jpg/800px-Lise_Meitner_NatGeo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Lise_Meitner_NatGeo.jpg/960px-Lise_Meitner_NatGeo.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -346,7 +346,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Madam_C._J._Walker",
     bio: "Madam C. J. Walker was an American entrepreneur, philanthropist, and political and social activist. She is recorded as the first female self-made millionaire in America in the Guinness Book of World Records. Walker made her fortune by developing and marketing a line of cosmetics and hair care products for black women through the business she founded, Madam C. J. Walker Manufacturing Company.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Madam_CJ_Walker_face_circa_1914.jpg/800px-Madam_CJ_Walker_face_circa_1914.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Madam_C._J._Walker_by_Addison_N._Scurlock.jpg/960px-Madam_C._J._Walker_by_Addison_N._Scurlock.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -358,7 +358,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Helen_Hayes",
     bio: "Helen Hayes MacArthur was an American actress whose career spanned 82 years. She eventually received the nickname 'First Lady of American Theatre' and was the second person and first woman to have won an Emmy, a Grammy, an Oscar, and a Tony Award (an EGOT).",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Helen_Hayes_1948.jpg/800px-Helen_Hayes_1948.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Helen_Hayes_1948.jpg/960px-Helen_Hayes_1948.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -370,7 +370,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Madeleine_Albright",
     bio: "Madeleine Jana Korbel Albright was an American diplomat and political scientist who served as the 64th United States secretary of state from 1997 to 2001. A member of the Democratic Party, Albright was the first woman to hold that post.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Secalbright.jpg/800px-Secalbright.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Secalbright.jpg/960px-Secalbright.jpg",
     attribution: "public domain image",
   },
   //cc
@@ -381,9 +381,8 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Agatha_Christie",
     bio: 'Dame Agatha Mary Clarissa Christie was an English writer known for her 66 detective novels and 14 short story collections. Christie has been called the "Queen of Crime"—a moniker which is now trademarked by her estate—or the "Queen of Mystery".',
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png",
-    attribution:
-      "By Agatha Christie plaque -Torre Abbey.jpg: Violetrigaderivative work: F l a n k e r - Agatha Christie plaque -Torre Abbey.jpg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4841991",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/Agatha_Christie_as_a_young_woman.jpg",
+    attribution: "public domain image",
   },
   //cc
   {
@@ -394,7 +393,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
     bio: "Anna Eleanor Roosevelt was an American political figure, diplomat, and activist. Through her travels, public engagement, and advocacy, she largely redefined the role of First Lady. She advocated for expanded roles for women in the workplace, the civil rights of African Americans and Asian Americans, and the rights of World War II refugees.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/CT_74-53_%283x4_cropped%29.jpg/800px-CT_74-53_%283x4_cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Eleanor_Roosevelt_at_the_United_Nations%2C_circa_1946-1947_%283x4_cropped%29.jpg/960px-Eleanor_Roosevelt_at_the_United_Nations%2C_circa_1946-1947_%283x4_cropped%29.jpg",
     attribution:
       "By FDR Presidential Library & Museum - https://www.flickr.com/photos/fdrlibrary/50517137801/, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=172507023",
   },
@@ -406,7 +405,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Audrey_Hepburn",
     bio: "Audrey Kathleen Hepburn was a British actress. Recognised as a film and fashion icon, she was ranked by the American Film Institute as the third-greatest female screen legend from the Classical Hollywood cinema. Later in life, Hepburn devoted much of her time to UNICEF, to which she had contributed since 1954.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/800px-AudreyKHepburn.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/960px-AudreyKHepburn.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -418,7 +417,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Isadora_Duncan",
     bio: "Angela Isadora Duncan was an American-born dancer and choreographer, who was a pioneer of modern contemporary dance, who performed to great acclaim throughout Europe and the US. Duncan's philosophy of dance moved away from rigid ballet technique and towards what she perceived as natural movement.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Isadora_Duncan_portrait_cropped.jpg/800px-Isadora_Duncan_portrait_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0a/Isadora_Duncan_portrait_cropped.jpg",
     attribution: "public domain image",
   },
   //cc
@@ -455,7 +454,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Mary_Shelley",
     bio: "Mary Wollstonecraft Shelley was an English novelist who is best known for writing the Gothic novel Frankenstein; or, The Modern Prometheus, which is considered an early example of science fiction. Shelley's works often argue that cooperation and sympathy, particularly as practised by women in the family, were the ways to reform civil society.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mary_Wollstonecraft_Shelley_Rothwell.tif/lossy-page1-800px-Mary_Wollstonecraft_Shelley_Rothwell.tif.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mary_Wollstonecraft_Shelley_Rothwell.tif/lossy-page1-960px-Mary_Wollstonecraft_Shelley_Rothwell.tif.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -467,7 +466,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Billie_Holiday",
     bio: "Billie Holiday was an American jazz and swing music singer. Her vocal style, strongly influenced by jazz instrumentalists, inspired a new way of manipulating phrasing and tempo.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Portrait_of_Billie_Holiday_and_Mister%2C_Downbeat%2C_New_York%2C_N.Y.%2C_ca._Feb._1947_%28LOC%2C_5020400274%2C_cropped%29.jpg/800px-Portrait_of_Billie_Holiday_and_Mister%2C_Downbeat%2C_New_York%2C_N.Y.%2C_ca._Feb._1947_%28LOC%2C_5020400274%2C_cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Portrait_of_Billie_Holiday_and_Mister%2C_Downbeat%2C_New_York%2C_N.Y.%2C_ca._Feb._1947_%28LOC%2C_5020400274%2C_cropped%29.jpg/960px-Portrait_of_Billie_Holiday_and_Mister%2C_Downbeat%2C_New_York%2C_N.Y.%2C_ca._Feb._1947_%28LOC%2C_5020400274%2C_cropped%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -479,7 +478,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Dorothea_Lange",
     bio: "Dorothea Lange was an American documentary photographer and photojournalist. Lange's photographs influenced the development of documentary photography and humanized the consequences of the Great Depression.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Dorothea_Lange_atop_automobile_in_California_%28restored%29_%28cropped%29.jpg/800px-Dorothea_Lange_atop_automobile_in_California_%28restored%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cd/Dorothea_Lange_atop_automobile_in_California_%28restored%29_%28cropped%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -501,7 +500,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Rachel_Carson",
     bio: "Rachel Louise Carson was an American marine biologist, writer, and conservationist whose sea trilogy and book Silent Spring are credited with advancing marine conservation and the global environmental movement.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Rachel-Carson.jpg/800px-Rachel-Carson.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Rachel-Carson.jpg/960px-Rachel-Carson.jpg",
     attribution: "public domain image",
   },
   //cc
@@ -524,7 +523,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Ella_Fitzgerald",
     bio: 'Ella Jane Fitzgerald was an American jazz singer. She was noted for her purity of tone, impeccable diction, phrasing, timing, intonation, and a "horn-like" improvisational ability, particularly in her scat singing.',
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ella_Fitzgerald_by_Carl_Van_Vechten_-_American_Flag_%28cropped%29.jpg/800px-Ella_Fitzgerald_by_Carl_Van_Vechten_-_American_Flag_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/Ella_Fitzgerald_1962.JPG",
     attribution: "public domain image",
   },
   //pd
@@ -536,7 +535,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Virginia_Woolf",
     bio: "Adeline Virginia Woolf was an English writer. She is considered one of the most important modernist 20th-century authors. Her works, translated into more than 50 languages, have attracted attention and widespread commentary for inspiring feminism.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg/800px-George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg/960px-George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -547,7 +546,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Lady_Mary_Wortley_Montagu",
     bio: "Lady Mary Wortley Montagu was an English aristocrat, medical pioneer, writer, and poet. Aside from her writing, Mary is also known for introducing and advocating smallpox inoculation in Britain after her return from Turkey.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Jonathan_Richardson_d._J._001.jpg/800px-Jonathan_Richardson_d._J._001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Jonathan_Richardson_d._J._001.jpg/960px-Jonathan_Richardson_d._J._001.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -559,7 +558,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Sojourner_Truth",
     bio: "Sojourner Truth was an American abolitionist and activist for African-American civil rights, women's rights, and alcohol temperance. Her best-known speech was delivered extemporaneously, at the Ohio Women's Rights Convention in Akron, Ohio. The speech became widely known during the Civil War by the title \"Ain't I a Woman?\"",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sojourner_Truth%2C_1870_%28cropped%2C_restored%29.jpg/800px-Sojourner_Truth%2C_1870_%28cropped%2C_restored%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sojourner_Truth%2C_1870_%28cropped%2C_restored%29.jpg/960px-Sojourner_Truth%2C_1870_%28cropped%2C_restored%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -570,7 +569,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Helen_Keller",
     bio: "Helen Adams Keller was an American author, disability rights advocate, political activist and lecturer. Keller campaigned for those with disabilities, for women's suffrage, labor rights, and world peace.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Helen_Keller_circa_1920_-_restored.jpg/800px-Helen_Keller_circa_1920_-_restored.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Helen_Keller_%28circa_1904%29.jpg/960px-Helen_Keller_%28circa_1904%29.jpg",
     attribution: "public domain image",
   },
   //pd
@@ -593,7 +592,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Ruth_Handler",
     bio: "Ruth Marianna Handler was an American businesswoman and inventor. She is best known for inventing the Barbie doll, and being co-founder of toy manufacturer Mattel.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ruth_Handler_1961_%28cropped%29.jpg/800px-Ruth_Handler_1961_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ruth_Handler_1961_%28cropped%29.jpg/960px-Ruth_Handler_1961_%28cropped%29.jpg",
     attribution:
       "By Originally published by the Los Angeles Times. Photographer unknown. Restored by Adam Cuerden - https://digital.library.ucla.edu/catalog/ark:/21198/zz0002qg0b, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=134689736",
   },
@@ -606,7 +605,7 @@ export const Women: Woman[] = [
     link: "https://en.wikipedia.org/wiki/Patsy_Mink",
     bio: "Patsy Matsu Mink was an American attorney and politician from the U.S. state of Hawaii. She was the first woman of color and the first Asian-American woman elected to Congress, and is known for her work on legislation advancing women's rights and education.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Patsy_Mink_1994_portrait_%28cropped%29.tif/lossy-page1-800px-Patsy_Mink_1994_portrait_%28cropped%29.tif.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Patsy_Mink_1994_portrait_%28cropped%29.tif/lossy-page1-960px-Patsy_Mink_1994_portrait_%28cropped%29.tif.jpg",
     attribution: "public domain image",
   },
 ];
