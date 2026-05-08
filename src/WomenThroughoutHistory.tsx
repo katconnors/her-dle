@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Woman } from "./Women";
 
 // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
@@ -10,6 +10,20 @@ interface WomenThroughoutHistoryProps {
 }
 
 function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
+  const [imageError, setImageError] = useState(false);
+
+  const isRevealed =
+    props.woman !== null &&
+    (props.prevguess.length === 5 ||
+      props.woman.lastname.toUpperCase() ===
+        props.prevguess[props.prevguess.length - 1]);
+
+  useEffect(() => {
+    if (isRevealed) {
+      setImageError(false);
+    }
+  }, [isRevealed, props.woman]);
+
   if (props.woman !== null) {
     const WomanName = props.woman.lastname;
     let UnderscoreArray = [];
@@ -30,11 +44,7 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
     let link = "";
     let linktext = "";
 
-    if (
-      props.prevguess.length === 5 ||
-      props.woman.lastname.toUpperCase() ===
-        props.prevguess[props.prevguess.length - 1]
-    ) {
+    if (isRevealed) {
       lastname = props.woman.lastname;
       bio = props.woman.bio;
       image = props.woman.image;
@@ -42,7 +52,6 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
       link = props.woman.link;
       underscorelength = "";
       linktext = `Learn more about ${lastname} on Wikipedia`;
-      <br />;
     }
 
     return (
@@ -52,9 +61,16 @@ function WomenThroughoutHistory(props: WomenThroughoutHistoryProps) {
         {underscorelength}
         <br />
         <div className="image-section">
-          <div className="portrait">
-            <img src={image} />
-          </div>
+          {!imageError && image && (
+            <div className="portrait">
+              <img
+                src={image}
+                onError={() => setImageError(true)}
+                onLoad={() => setImageError(false)}
+                alt={`Portrait of ${lastname}`}
+              />
+            </div>
+          )}
           <div className="attribution"> {attribution}</div>
         </div>
         <br />
