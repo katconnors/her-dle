@@ -56,6 +56,19 @@ function App() {
   const [showAlert, UpdateLengthAlert] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState<string>("1");
+
+  const disabledLetters = new Set<string>();
+  if (HistoricalWoman != null) {
+    const answer = HistoricalWoman.lastname.toUpperCase();
+    PreviousGuesses.forEach((guess) => {
+      guess.split("").forEach((letter) => {
+        if (!answer.includes(letter)) {
+          disabledLetters.add(letter);
+        }
+      });
+    });
+  }
+  const isKeyDisabled = (letter: string) => disabledLetters.has(letter);
   const toggle = (id: string) => {
     if (open === id) {
       setOpen("");
@@ -241,155 +254,53 @@ function App() {
           HistoricalWoman.lastname.toUpperCase() ===
             PreviousGuesses[PreviousGuesses.length - 1] ? null : (
             <div className="keyboard">
-              <div className="keyboardline">
-                <LetterButton
-                  letter="Q"
-                  onClick={() => UpdateAnswer([...AnswerValue, "Q"])}
-                />
-
-                <LetterButton
-                  letter="W"
-                  onClick={() => UpdateAnswer([...AnswerValue, "W"])}
-                />
-
-                <LetterButton
-                  letter="E"
-                  onClick={() => UpdateAnswer([...AnswerValue, "E"])}
-                />
-                <LetterButton
-                  letter="R"
-                  onClick={() => UpdateAnswer([...AnswerValue, "R"])}
-                />
-                <LetterButton
-                  letter="T"
-                  onClick={() => UpdateAnswer([...AnswerValue, "T"])}
-                />
-                <LetterButton
-                  letter="Y"
-                  onClick={() => UpdateAnswer([...AnswerValue, "Y"])}
-                />
-                <LetterButton
-                  letter="U"
-                  onClick={() => UpdateAnswer([...AnswerValue, "U"])}
-                />
-                <LetterButton
-                  letter="I"
-                  onClick={() => UpdateAnswer([...AnswerValue, "I"])}
-                />
-                <LetterButton
-                  letter="O"
-                  onClick={() => UpdateAnswer([...AnswerValue, "O"])}
-                />
-                <LetterButton
-                  letter="P"
-                  onClick={() => UpdateAnswer([...AnswerValue, "P"])}
-                />
-                <BackspaceButton
-                  message="←"
-                  onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
-                />
-              </div>
-
-              <div className="keyboardline">
-                <LetterButton
-                  letter="A"
-                  onClick={() => UpdateAnswer([...AnswerValue, "A"])}
-                />
-                <LetterButton
-                  letter="S"
-                  onClick={() => UpdateAnswer([...AnswerValue, "S"])}
-                />
-                <LetterButton
-                  letter="D"
-                  onClick={() => UpdateAnswer([...AnswerValue, "D"])}
-                />
-                <LetterButton
-                  letter="F"
-                  onClick={() => UpdateAnswer([...AnswerValue, "F"])}
-                />
-                <LetterButton
-                  letter="G"
-                  onClick={() => UpdateAnswer([...AnswerValue, "G"])}
-                />
-
-                <LetterButton
-                  letter="H"
-                  onClick={() => UpdateAnswer([...AnswerValue, "H"])}
-                />
-                <LetterButton
-                  letter="J"
-                  onClick={() => UpdateAnswer([...AnswerValue, "J"])}
-                />
-
-                <LetterButton
-                  letter="K"
-                  onClick={() => UpdateAnswer([...AnswerValue, "K"])}
-                />
-
-                <LetterButton
-                  letter="L"
-                  onClick={() => UpdateAnswer([...AnswerValue, "L"])}
-                />
-                <LetterButton
-                  letter="'"
-                  onClick={() => UpdateAnswer([...AnswerValue, "'"])}
-                />
-                <br />
-              </div>
-              <div className="keyboardline">
-                <LetterButton
-                  letter="Z"
-                  onClick={() => UpdateAnswer([...AnswerValue, "Z"])}
-                />
-                <LetterButton
-                  letter="X"
-                  onClick={() => UpdateAnswer([...AnswerValue, "X"])}
-                />
-                <LetterButton
-                  letter="C"
-                  onClick={() => UpdateAnswer([...AnswerValue, "C"])}
-                />
-                <LetterButton
-                  letter="V"
-                  onClick={() => UpdateAnswer([...AnswerValue, "V"])}
-                />
-
-                <LetterButton
-                  letter="B"
-                  onClick={() => UpdateAnswer([...AnswerValue, "B"])}
-                />
-                <LetterButton
-                  letter="N"
-                  onClick={() => UpdateAnswer([...AnswerValue, "N"])}
-                />
-                <LetterButton
-                  letter="M"
-                  onClick={() => UpdateAnswer([...AnswerValue, "M"])}
-                />
-                <LetterButton
-                  letter="-"
-                  onClick={() => UpdateAnswer([...AnswerValue, "-"])}
-                />
-
-                <br></br>
-
-                <GuessButton
-                  message="Guess"
-                  onClick={() => {
-                    UpdateLengthAlert(false);
-                    if (HistoricalWoman != null) {
-                      if (
-                        AnswerValue.length == HistoricalWoman.lastname.length
-                      ) {
-                        AddGuess([...PreviousGuesses, AnswerValue.join("")]);
-                        UpdateAnswer([]);
-                      } else {
-                        UpdateLengthAlert(true);
-                      }
-                    }
-                  }}
-                />
-              </div>
+              {[
+                ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+                ["A", "S", "D", "F", "G", "H", "J", "K", "L", "'"],
+                ["Z", "X", "C", "V", "B", "N", "M", "-"],
+              ].map((row, rowIndex) => (
+                <div key={rowIndex} className="keyboardline">
+                  {row.map((letter) => (
+                    <LetterButton
+                      key={letter}
+                      letter={letter}
+                      onClick={() => UpdateAnswer([...AnswerValue, letter])}
+                      disabled={isKeyDisabled(letter)}
+                    />
+                  ))}
+                  {rowIndex === 0 ? (
+                    <BackspaceButton
+                      message="←"
+                      onClick={() => UpdateAnswer(AnswerValue.slice(0, -1))}
+                    />
+                  ) : null}
+                  {rowIndex === 2 ? (
+                    <>
+                      <br />
+                      <GuessButton
+                        message="Guess"
+                        onClick={() => {
+                          UpdateLengthAlert(false);
+                          if (HistoricalWoman != null) {
+                            if (
+                              AnswerValue.length ==
+                              HistoricalWoman.lastname.length
+                            ) {
+                              AddGuess([
+                                ...PreviousGuesses,
+                                AnswerValue.join(""),
+                              ]);
+                              UpdateAnswer([]);
+                            } else {
+                              UpdateLengthAlert(true);
+                            }
+                          }
+                        }}
+                      />
+                    </>
+                  ) : null}
+                </div>
+              ))}
             </div>
           )}
         </div>

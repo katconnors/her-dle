@@ -4,6 +4,7 @@ import { Button } from "reactstrap";
 interface LetterButtonProps {
   letter: string;
   onClick: () => void;
+  disabled?: boolean;
 }
 
 function LetterButton(props: LetterButtonProps) {
@@ -13,6 +14,7 @@ function LetterButton(props: LetterButtonProps) {
       className="letterbutton"
       type="button"
       onClick={props.onClick}
+      disabled={props.disabled}
     >
       {props.letter}
     </Button>
